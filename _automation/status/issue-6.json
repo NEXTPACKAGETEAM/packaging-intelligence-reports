@@ -1,8 +1,8 @@
 {
  "number": 6,
  "ok": true,
- "final": false,
- "live": null,
+ "final": true,
+ "live": true,
  "problems": [],
  "dropped": [],
  "items": 13,
