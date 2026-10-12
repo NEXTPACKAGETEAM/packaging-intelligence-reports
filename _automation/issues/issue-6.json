@@ -2,7 +2,7 @@
  "number": 6,
  "date_range": "2026.10.06~10.12",
  "masthead_title": "재활용 증명의 계절, 용기 수요는 맞물려 늘어난다",
- "summary": "이번 주는 포장 업계가 '재활용 가능하다는 주장'에서 '실제로 재활용되는가'로 입증 책임을 옮기는 흐름이 뚜렷했다. 뒤셀도르프 ALUMINIUM 2026과 밀라노 CPHI 2026은 각각 지속가능성 콘퍼런스와 재활용 가능 고차단 블리스터로 이 질문에 답했고, 미국 AmericaPack Summit과 남아프리카 Propak Cape 역시 SB54·EPR 대응과 모노머티리얼 설계를 핵심 의제로 올렸다. 국내에서는 화장품 용기 수요 호조가 펌텍코리아의 실적 기대로 이어지며, 규제보다 한발 앞서 움직이는 용기 공급망의 체감 온도를 보여줬다.",
+ "summary": "이번 주는 포장 업계가 '재활용 가능하다는 주장'에서 '실제로 재활용되는가'로 입증 책임을 옮기는 흐름이 뚜렷했다. 뒤셀도르프 ALUMINIUM 2026과 밀라노 CPHI 2026, 바르셀로나 'Sustainability in Packaging Europe'까지 유럽 전시장마다 재활용 콘퍼런스와 재활용 가능 소재가 쏟아졌고, 미국 AmericaPack Summit과 남아프리카 Propak Cape도 SB54·EPR 대응과 모노머티리얼 설계를 핵심 의제로 올렸다. Pulpex의 첫 상업용 종이병 공장, Borouge의 유럽 재생원료 증설, 일본 잉크·접착제 업계의 필름 재활용성 공통 평가 프로토콜까지 더해지며 '재활용성 증명'이 소재·설비·업계 표준 전반으로 번지고 있다. 국내에서는 화장품 용기 수요 호조가 펌텍코리아의 실적 기대로 이어지며, 규제보다 한발 앞서 움직이는 용기 공급망의 체감 온도를 보여줬다.",
  "reg_section_title": "재활용 분담금, 영국·미국·중국에서 동시에 조여진다",
  "newsletter_items": [
   {
@@ -102,6 +102,164 @@
    "insight": "그래서— 미국 포장업계의 화두가 '재활용 가능 여부'에서 '실제로 회수되는가'로 옮겨가고 있다.",
    "event_date": "2026-10-06",
    "source_published": "2026-10-06"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "노벨렉스, 텍사스에 포장 테스트 전용 '응용혁신센터' 신설",
+   "url": "https://www.plasticstoday.com/packaging/novolex-opens-applied-innovation-center-in-texas",
+   "date": "2026-10-08",
+   "source": "PlasticsToday",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "노벨렉스가 10월 6일 텍사스 로어노크에 1만7,500평방피트 규모의 '응용혁신센터(Applied Innovation Center)'를 열었다고 발표했다. 식품서비스·식료품·소매·카페·베이커리 등 5개 매장 환경을 실물로 구현해, 고객이 포장재를 실제 조건에서 비교·테스트할 수 있도록 했다.",
+   "insight": "그래서— '샘플을 보내 달라'던 포장재 영업 방식이 '매장처럼 꾸민 공간에서 직접 테스트하라'로 바뀌고 있다. 규제·소재 전환이 잦아질수록 이런 실증 공간의 가치는 커진다.",
+   "event_date": "2026-10-06",
+   "source_published": "2026-10-08"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "Plastic Ingenuity, PVC 의료기기 릴을 재활용 가능 PET로 전환해 수상",
+   "url": "https://www.plasticstoday.com/packaging/plastic-ingenuity-s-paige-greenberg-highlights-sustainable-packaging-innovation-for-pack-expo",
+   "date": "2026-10-09",
+   "source": "PlasticsToday",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "미국 Plastic Ingenuity가 용접형 PVC로 만들던 길이 약 76cm 의료기기 포장 릴을 맞물리는 두 개의 PET 반구조로 재설계해 Ameristar Award 지속가능 포장 부문을 수상했다. 이 재설계로 매년 23만6,000파운드(약 107톤)의 소재가 재활용 가능한 형태로 전환됐으며, 10월 18일 개막하는 Pack Expo 2026에서 소개될 예정이다.",
+   "insight": "그래서— 단일 품목 재설계만으로 '재활용 불가'였던 포장을 100톤 단위로 되돌릴 수 있다는 걸 보여준 사례다. 화장품 2차 포장에도 적용할 여지가 크다.",
+   "source_published": "2026-10-09"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇨🇳",
+   "region": "중국",
+   "headline": "'올 인 프린트 차이나 2026' 상하이서 개막, 포장 인쇄도 핵심 축",
+   "url": "https://www.allinprint.com/en/press_center/exhibition_ews/4028.html",
+   "date": "2026-10-12",
+   "source": "All in Print China",
+   "img": "",
+   "tags": [
+    "중국",
+    "S3상용",
+    "업계공인",
+    "기술혁신"
+   ],
+   "body": "중국 최대 인쇄 전시회 '올 인 프린트 차이나(All in Print China)' 10주년 행사가 10월 12일 상하이 신국제박람중심에서 개막했다. 10개 홀, 12만㎡ 규모로 열리며 디지털 인쇄·후가공과 함께 폴딩카톤·라벨·연포장·골판지 등 포장 인쇄 전 분야가 7개 테마관 중 하나로 편성됐다.",
+   "insight": "그래서— 중국 포장 인쇄업계도 '찍어내는 기술'보다 '재활용 가능한 인쇄·라미네이션 기술'을 전면에 내세우는 쪽으로 옮겨가고 있다.",
+   "event_date": "2026-10-12",
+   "source_published": "2026-10-12"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "CNG, 재활용 친화형 MDO-PE 필름 2세대 플랫폼 확장",
+   "url": "https://www.plasticstoday.com/packaging/cng-expands-recycle-ready-films-platform",
+   "date": "2026-10-07",
+   "source": "PlasticsToday",
+   "img": "",
+   "tags": [
+    "미국",
+    "S2프로토",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "Charter Next Generation(CNG)이 10월 7일 내열성과 고차단 성능, 무광 마감을 갖춘 2세대 MDO-PE(기계방향연신 폴리에틸렌) 필름 플랫폼을 공개했다. 회사는 이 신제품이 브랜드의 생산자책임재활용제도(EPR) 분담금을 낮출 수 있는 선택지를 넓혀준다고 설명했다.",
+   "insight": "그래서— 연포장 업계에서 '재활용 용이성'이 곧 '분담금 절감'이라는 직접적인 비용 언어로 번역되고 있다.",
+   "source_published": "2026-10-07"
+  },
+  {
+   "is_reg": false,
+   "flag": "🌐",
+   "region": "글로벌",
+   "headline": "일본서 '필름 포장 재활용성 평가' 업계 공통 프로토콜 첫 도입",
+   "url": "https://www.packagingeurope.com/industry-first-common-protocol-for-evaluating-film-packaging-recyclability-in-japan/",
+   "date": "2026-10-07",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "글로벌",
+    "S2프로토",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "일본 artience(도요잉크)와 DIC가 10월 7일 연포장 필름의 탈묵(deinking)·탈접착(debonding) 재활용성을 평가하는 업계 최초의 공통 프로토콜을 공개했다. 그동안 기업마다 다른 기준으로 평가해 비교가 어려웠던 필름 재활용성을, 시험 절차와 평가 기준, 보고 양식까지 표준화해 컨버터·브랜드·재활용업체가 공유할 수 있게 했다.",
+   "insight": "그래서— 잉크·접착제 제조사가 '재활용성 평가 기준' 자체를 표준화하는 쪽으로 움직이면, 화장품 파우치·리필백의 재활용 인증도 한층 쉬워질 것이다.",
+   "event_date": "2026-10-07",
+   "source_published": "2026-10-07"
+  },
+  {
+   "is_reg": true,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "유럽 재사용 포장 연합 'New ERA' 출범, 전자상거래 반납 체계 표준화 추진",
+   "url": "https://www.packagingeurope.com/operators-unite-to-harmonize-reusable-e-commerce-infrastructure-across-europe/",
+   "date": "2026-10-08",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "업계공인",
+    "지속가능"
+   ],
+   "body": "Capsa, Circl'it, Loopipak, MOBIUSpack 등 유럽 재사용 포장 운영사들이 10월 8일 바르셀로나 'Sustainability in Packaging Europe'에서 'New European Reuse Alliance(New ERA)'를 중심으로 공동 라벨·반납망 표준화 계획을 발표했다. 2025년 유럽에서 배송된 220억 개 택배 물량을 배경으로, 서로 다른 반납 시스템 때문에 소비자가 아무 수거함에나 재사용 포장을 반납할 수 없는 문제를 해결하려는 취지다.",
+   "insight": "그래서— PPWR의 전자상거래 재사용 목표를 채우려면 '각자 다른 반납 시스템'부터 통일해야 한다는 공감대가 업계 차원에서 먼저 형성됐다.",
+   "event_date": "2026-10-08",
+   "source_published": "2026-10-08"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "Pulpex, 글래스고에 첫 상업용 '종이병' 공장 가동",
+   "url": "https://www.packagingeurope.com/pulpex-opens-first-commercial-facility-for-paper-bottle-manufacturing/",
+   "date": "2026-10-08",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "영국 Pulpex가 10월 8일 스코틀랜드 글래스고 인근 웨스트웨이에 연간 4,000만 개 생산 능력을 갖춘 첫 상업용 '섬유병(종이병)' 공장을 열었다고 밝혔다. 가정용 세제 브랜드 smol과 스코틀랜드산 미네랄워터 Purely Scottish가 초기 고객으로 참여하며, 올해 생산 물량의 90% 이상이 이미 계약된 상태다.",
+   "insight": "그래서— '파일럿 생산'에 머물던 종이병이 상업 규모 공장을 확보하며, 화장품·향수 업계의 '병 소재 전환' 선택지에 처음으로 실제 공급망이 생겼다.",
+   "event_date": "2026-10-08",
+   "source_published": "2026-10-08"
+  },
+  {
+   "is_reg": false,
+   "flag": "🌐",
+   "region": "글로벌",
+   "headline": "Borouge, 오스트리아·독일 재활용 설비에 투자해 연 1.4만 톤 증설",
+   "url": "https://www.packagingeurope.com/investments-to-boost-borouges-mechanical-recycling-capacity-for-plastics/",
+   "date": "2026-10-07",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "글로벌",
+    "S3상용",
+    "지속가능",
+    "경쟁 추격"
+   ],
+   "body": "아부다비 기반 Borouge인터내셔널이 10월 7일 독일 니더게브라(옛 mtm plastics)와 오스트리아 빌돈(옛 Ecoplast) 재활용 설비에 투자해 연간 재생원료 생산량을 약 1만4,000톤 늘린다고 발표했다. 오스트리아 증설분은 주로 연포장용 재생 폴리에틸렌에 투입될 예정이며, 두 설비 모두 2027년 가동을 목표로 한다.",
+   "insight": "그래서— 중동 석유화학 기업까지 유럽 재생원료 설비에 직접 투자하는 건, EU 포장 규정의 재생원료 함량 목표가 '언젠가'가 아니라 '지금 확보해야 할 원료'로 받아들여지고 있다는 뜻이다.",
+   "event_date": "2026-10-07",
+   "source_published": "2026-10-07"
   }
  ],
  "regulation_current": [
