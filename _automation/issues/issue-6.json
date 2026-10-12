@@ -6,46 +6,6 @@
  "reg_section_title": "재활용 분담금, 영국·미국·중국에서 동시에 조여진다",
  "newsletter_items": [
   {
-   "is_reg": false,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "ALUMINIUM 2026 뒤셀도르프 개막, 지속가능성·재활용 콘퍼런스 신설",
-   "url": "https://www.ipcm.it/pt/post/aluminium-2026.aspx",
-   "date": "2026-10-06",
-   "source": "IPCM",
-   "img": "",
-   "tags": [
-    "유럽",
-    "S3상용",
-    "기술혁신",
-    "지속가능"
-   ],
-   "body": "뒤셀도르프에서 10월 6일부터 8일까지 열린 알루미늄 산업 전시회 'ALUMINIUM 2026'에 100여개국에서 800개 이상의 기업이 참가했다. 올해 처음으로 지속가능성·재활용 콘퍼런스와 알루미늄 이노베이션 어워드가 신설되며, 추출·압연부터 표면처리, 1차 생산과 재활용까지 아우르는 전시 구성을 갖췄다.",
-   "insight": "그래서— 알루미늄 업계도 '전시'보다 '순환 전략 회의'에 무게를 두기 시작했다. 캔·화장품 용기용 알루미늄 공급망의 탈탄소 경쟁이 본격화되는 신호다.",
-   "event_date": "2026-10-06",
-   "source_published": "2026-10-06"
-  },
-  {
-   "is_reg": false,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "ACG, 재활용 가능한 고차단 PP 블리스터 'RecycloPod PP Ultra' 공개",
-   "url": "https://www.packagingeurope.com/recyclable-high-barrier-polypropylene-pharma-blister-revealed-by-acg/",
-   "date": "2026-10-06",
-   "source": "Packaging Europe",
-   "img": "",
-   "tags": [
-    "유럽",
-    "S2프로토",
-    "기술혁신",
-    "지속가능"
-   ],
-   "body": "인도 ACG가 10월 6일부터 열린 밀라노 CPHI 2026에서 PP/EVOH/PP 구조의 모노 폴리프로필렌 계열 의약품 블리스터 'RecycloPod PP Ultra'를 공개했다. 수분·산소 차단성을 모두 갖춰 기존 PVC·알루미늄 복합 블리스터를 대체할 수 있으며, EU 포장 규정(PPWR) 대응을 내세운 'Pod' 제품군의 첫 출시작이다.",
-   "insight": "그래서— 화장품 업계가 고민하는 '차단성과 재활용성 중 하나를 포기해야 하는' 딜레마가 제약 포장에서 먼저 풀리고 있다. 뷰티 용기에도 같은 구조 전환이 이어질 가능성이 크다.",
-   "event_date": "2026-10-06",
-   "source_published": "2026-10-06"
-  },
-  {
    "is_reg": true,
    "flag": "🌐",
    "region": "글로벌",
@@ -53,7 +13,7 @@
    "url": "https://www.miningweekly.com/article/packaging-businesses-under-pressure-turn-to-technology-at-propak-cape-2026-2026-10-09",
    "date": "2026-10-09",
    "source": "Mining Weekly",
-   "img": "",
+   "img": "https://cdn.creamermedia.com/assets/articles/images/resized/0001304722_resized_propakcape2026pressrelease5image1022.jpg",
    "tags": [
     "글로벌",
     "S3상용",
@@ -65,6 +25,86 @@
    "source_published": "2026-10-09"
   },
   {
+   "is_reg": true,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "AmericaPack Summit 2026, SB54·EPR 대응이 최우선 의제로",
+   "url": "https://www.foodbev.com/news/americapack-summit-2026-to-bring-fmcg-packaging-leaders-to-san-diego",
+   "date": "2026-10-06",
+   "source": "FoodBev Media",
+   "img": "https://static.wixstatic.com/media/8a42ce_c053e1867e294677b0279c891cb1134f~mv2.png/v1/fill/w_800,h_400,al_c/8a42ce_c053e1867e294677b0279c891cb1134f~mv2.png",
+   "tags": [
+    "미국",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "미국 FMCG 포장 업계 고위 임원들이 모이는 비공개 포럼 'AmericaPack Summit 2026'이 10월 5~6일 캘리포니아 칼스배드에서 열렸다. 캘리포니아 SB54 생산자책임재활용제도(EPR) 대응과 소재 혁신, '재활용 가능하다는 주장과 실제 회수율 사이의 간극'이 핵심 의제로 다뤄졌다.",
+   "insight": "그래서— 미국 포장업계의 화두가 '재활용 가능 여부'에서 '실제로 회수되는가'로 옮겨가고 있다.",
+   "event_date": "2026-10-06",
+   "source_published": null
+  },
+  {
+   "is_reg": true,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "유럽 재사용 포장 연합 'New ERA' 출범, 전자상거래 반납 체계 표준화 추진",
+   "url": "https://www.packagingeurope.com/operators-unite-to-harmonize-reusable-e-commerce-infrastructure-across-europe/",
+   "date": "2026-10-08",
+   "source": "Packaging Europe",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Movopack_2.png",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "업계공인",
+    "지속가능"
+   ],
+   "body": "Capsa, Circl'it, Loopipak, MOBIUSpack 등 유럽 재사용 포장 운영사들이 10월 8일 바르셀로나 'Sustainability in Packaging Europe'에서 'New European Reuse Alliance(New ERA)'를 중심으로 공동 라벨·반납망 표준화 계획을 발표했다. 2025년 유럽에서 배송된 220억 개 택배 물량을 배경으로, 서로 다른 반납 시스템 때문에 소비자가 아무 수거함에나 재사용 포장을 반납할 수 없는 문제를 해결하려는 취지다.",
+   "insight": "그래서— PPWR의 전자상거래 재사용 목표를 채우려면 '각자 다른 반납 시스템'부터 통일해야 한다는 공감대가 업계 차원에서 먼저 형성됐다.",
+   "event_date": "2026-10-08",
+   "source_published": "2026-10-08"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "ALUMINIUM 2026 뒤셀도르프 개막, 지속가능성·재활용 콘퍼런스 신설",
+   "url": "https://www.ipcm.it/pt/post/aluminium-2026.aspx",
+   "date": "2026-10-06",
+   "source": "IPCM",
+   "img": "https://www.ipcm.it/upload/img/c/600x400-ALUMINIUM2026_WorldsLeadingIndustryFairReturnstoDsseldorfwithEnhancedSurfaceTechnologyFocus.png",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "뒤셀도르프에서 10월 6일부터 8일까지 열린 알루미늄 산업 전시회 'ALUMINIUM 2026'에 100여개국에서 800개 이상의 기업이 참가했다. 올해 처음으로 지속가능성·재활용 콘퍼런스와 알루미늄 이노베이션 어워드가 신설되며, 추출·압연부터 표면처리, 1차 생산과 재활용까지 아우르는 전시 구성을 갖췄다.",
+   "insight": "그래서— 알루미늄 업계도 '전시'보다 '순환 전략 회의'에 무게를 두기 시작했다. 캔·화장품 용기용 알루미늄 공급망의 탈탄소 경쟁이 본격화되는 신호다.",
+   "event_date": "2026-10-06",
+   "source_published": null
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "ACG, 재활용 가능한 고차단 PP 블리스터 'RecycloPod PP Ultra' 공개",
+   "url": "https://www.packagingeurope.com/recyclable-high-barrier-polypropylene-pharma-blister-revealed-by-acg/",
+   "date": "2026-10-06",
+   "source": "Packaging Europe",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_ACG_Recyclopod_PP.png",
+   "tags": [
+    "유럽",
+    "S2프로토",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "인도 ACG가 10월 6일부터 열린 밀라노 CPHI 2026에서 PP/EVOH/PP 구조의 모노 폴리프로필렌 계열 의약품 블리스터 'RecycloPod PP Ultra'를 공개했다. 수분·산소 차단성을 모두 갖춰 기존 PVC·알루미늄 복합 블리스터를 대체할 수 있으며, EU 포장 규정(PPWR) 대응을 내세운 'Pod' 제품군의 첫 출시작이다.",
+   "insight": "그래서— 화장품 업계가 고민하는 '차단성과 재활용성 중 하나를 포기해야 하는' 딜레마가 제약 포장에서 먼저 풀리고 있다. 뷰티 용기에도 같은 구조 전환이 이어질 가능성이 크다.",
+   "event_date": "2026-10-06",
+   "source_published": "2026-10-07"
+  },
+  {
    "is_reg": false,
    "flag": "🇰🇷",
    "region": "한국",
@@ -72,7 +112,7 @@
    "url": "https://www.mt.co.kr/stock/2026/10/08/2026100808323149453",
    "date": "2026-10-08",
    "source": "머니투데이",
-   "img": "",
+   "img": "https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=527,fit=cover,bg=white,f=auto,quality=high,sharpen=2,g=face/21/2026/10/2026100808323149453_1.jpg",
    "tags": [
     "한국",
     "S3상용",
@@ -84,26 +124,6 @@
    "source_published": "2026-10-08"
   },
   {
-   "is_reg": true,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "AmericaPack Summit 2026, SB54·EPR 대응이 최우선 의제로",
-   "url": "https://www.foodbev.com/news/americapack-summit-2026-to-bring-fmcg-packaging-leaders-to-san-diego",
-   "date": "2026-10-06",
-   "source": "FoodBev Media",
-   "img": "",
-   "tags": [
-    "미국",
-    "S3상용",
-    "업계공인",
-    "경쟁 추격"
-   ],
-   "body": "미국 FMCG 포장 업계 고위 임원들이 모이는 비공개 포럼 'AmericaPack Summit 2026'이 10월 5~6일 캘리포니아 칼스배드에서 열렸다. 캘리포니아 SB54 생산자책임재활용제도(EPR) 대응과 소재 혁신, '재활용 가능하다는 주장과 실제 회수율 사이의 간극'이 핵심 의제로 다뤄졌다.",
-   "insight": "그래서— 미국 포장업계의 화두가 '재활용 가능 여부'에서 '실제로 회수되는가'로 옮겨가고 있다.",
-   "event_date": "2026-10-06",
-   "source_published": "2026-10-06"
-  },
-  {
    "is_reg": false,
    "flag": "🇺🇸",
    "region": "미국",
@@ -111,7 +131,7 @@
    "url": "https://www.plasticstoday.com/packaging/novolex-opens-applied-innovation-center-in-texas",
    "date": "2026-10-08",
    "source": "PlasticsToday",
-   "img": "",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/bltc43d02abd0964e95/6ac7b4e4a4df602d97502d38/Novolex.png?disable=upscale&width=1200&height=630&fit=crop",
    "tags": [
     "미국",
     "S3상용",
@@ -131,7 +151,7 @@
    "url": "https://www.plasticstoday.com/packaging/plastic-ingenuity-s-paige-greenberg-highlights-sustainable-packaging-innovation-for-pack-expo",
    "date": "2026-10-09",
    "source": "PlasticsToday",
-   "img": "",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/bltdacd6a4ccf9dd731/6ac9074ee51205801b5a8392/Screenshot_2026-10-09_at_10.57.5.png?disable=upscale&width=1200&height=630&fit=crop",
    "tags": [
     "미국",
     "S3상용",
@@ -140,7 +160,7 @@
    ],
    "body": "미국 Plastic Ingenuity가 용접형 PVC로 만들던 길이 약 76cm 의료기기 포장 릴을 맞물리는 두 개의 PET 반구조로 재설계해 Ameristar Award 지속가능 포장 부문을 수상했다. 이 재설계로 매년 23만6,000파운드(약 107톤)의 소재가 재활용 가능한 형태로 전환됐으며, 10월 18일 개막하는 Pack Expo 2026에서 소개될 예정이다.",
    "insight": "그래서— 단일 품목 재설계만으로 '재활용 불가'였던 포장을 100톤 단위로 되돌릴 수 있다는 걸 보여준 사례다. 화장품 2차 포장에도 적용할 여지가 크다.",
-   "source_published": "2026-10-09"
+   "source_published": null
   },
   {
    "is_reg": false,
@@ -150,7 +170,7 @@
    "url": "https://www.allinprint.com/en/press_center/exhibition_ews/4028.html",
    "date": "2026-10-12",
    "source": "All in Print China",
-   "img": "",
+   "img": "https://www.allinprint.com/static/common/images/drupa.jpg",
    "tags": [
     "중국",
     "S3상용",
@@ -160,7 +180,7 @@
    "body": "중국 최대 인쇄 전시회 '올 인 프린트 차이나(All in Print China)' 10주년 행사가 10월 12일 상하이 신국제박람중심에서 개막했다. 10개 홀, 12만㎡ 규모로 열리며 디지털 인쇄·후가공과 함께 폴딩카톤·라벨·연포장·골판지 등 포장 인쇄 전 분야가 7개 테마관 중 하나로 편성됐다.",
    "insight": "그래서— 중국 포장 인쇄업계도 '찍어내는 기술'보다 '재활용 가능한 인쇄·라미네이션 기술'을 전면에 내세우는 쪽으로 옮겨가고 있다.",
    "event_date": "2026-10-12",
-   "source_published": "2026-10-12"
+   "source_published": null
   },
   {
    "is_reg": false,
@@ -170,7 +190,7 @@
    "url": "https://www.plasticstoday.com/packaging/cng-expands-recycle-ready-films-platform",
    "date": "2026-10-07",
    "source": "PlasticsToday",
-   "img": "",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/blt6fd5f075f172992d/6ac6416e0b44bc40e0aae99d/CNG.png?disable=upscale&width=1200&height=630&fit=crop",
    "tags": [
     "미국",
     "S2프로토",
@@ -189,7 +209,7 @@
    "url": "https://www.packagingeurope.com/industry-first-common-protocol-for-evaluating-film-packaging-recyclability-in-japan/",
    "date": "2026-10-07",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/artience0710.png",
    "tags": [
     "글로벌",
     "S2프로토",
@@ -202,26 +222,6 @@
    "source_published": "2026-10-07"
   },
   {
-   "is_reg": true,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "유럽 재사용 포장 연합 'New ERA' 출범, 전자상거래 반납 체계 표준화 추진",
-   "url": "https://www.packagingeurope.com/operators-unite-to-harmonize-reusable-e-commerce-infrastructure-across-europe/",
-   "date": "2026-10-08",
-   "source": "Packaging Europe",
-   "img": "",
-   "tags": [
-    "유럽",
-    "S3상용",
-    "업계공인",
-    "지속가능"
-   ],
-   "body": "Capsa, Circl'it, Loopipak, MOBIUSpack 등 유럽 재사용 포장 운영사들이 10월 8일 바르셀로나 'Sustainability in Packaging Europe'에서 'New European Reuse Alliance(New ERA)'를 중심으로 공동 라벨·반납망 표준화 계획을 발표했다. 2025년 유럽에서 배송된 220억 개 택배 물량을 배경으로, 서로 다른 반납 시스템 때문에 소비자가 아무 수거함에나 재사용 포장을 반납할 수 없는 문제를 해결하려는 취지다.",
-   "insight": "그래서— PPWR의 전자상거래 재사용 목표를 채우려면 '각자 다른 반납 시스템'부터 통일해야 한다는 공감대가 업계 차원에서 먼저 형성됐다.",
-   "event_date": "2026-10-08",
-   "source_published": "2026-10-08"
-  },
-  {
    "is_reg": false,
    "flag": "🇪🇺",
    "region": "유럽",
@@ -229,7 +229,7 @@
    "url": "https://www.packagingeurope.com/pulpex-opens-first-commercial-facility-for-paper-bottle-manufacturing/",
    "date": "2026-10-08",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Pulpex_Glasgow.png",
    "tags": [
     "유럽",
     "S3상용",
@@ -249,7 +249,7 @@
    "url": "https://www.packagingeurope.com/investments-to-boost-borouges-mechanical-recycling-capacity-for-plastics/",
    "date": "2026-10-07",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Borouge.png",
    "tags": [
     "글로벌",
     "S3상용",

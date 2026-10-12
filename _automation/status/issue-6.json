@@ -1,13 +1,22 @@
 {
  "number": 6,
- "ok": false,
- "final": true,
+ "ok": true,
+ "final": false,
  "live": null,
- "problems": [
-  "only 5 newsletter items survived verification (minimum 12)"
- ],
+ "problems": [],
  "dropped": [],
- "items": 5,
- "photos": 5,
- "checked_at": "2026-10-12T04:28:55.198587+00:00"
+ "items": 13,
+ "photos": 13,
+ "checked_at": "2026-10-12T04:34:25.850597+00:00",
+ "entry": {
+  "number": 6,
+  "date_range": "2026.10.06~10.12",
+  "newsletter_path": "newsletter-6.html",
+  "regulation_path": "regulation-6.html",
+  "newsletter_items": 13,
+  "photo_count": 13,
+  "regulation_current": 5,
+  "regulation_future": 5,
+  "masthead_title": "재활용 증명의 계절, 용기 수요는 맞물려 늘어난다"
+ }
 }

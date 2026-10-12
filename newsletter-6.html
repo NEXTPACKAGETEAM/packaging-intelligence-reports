@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 6호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">재활용 증명의 계절, 용기 수요는 맞물려 늘어난다</h1>
+    <div class="meta-bar">
+      <span class="accent">6호</span><span class="meta-sep">·</span>
+      2026.10.06 &ndash; 10.12<span class="meta-sep">·</span>
+      신선 <b>13</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">3</span><span class="meta-sep">·</span>
+      사진 13
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주는 포장 업계가 &#x27;재활용 가능하다는 주장&#x27;에서 &#x27;실제로 재활용되는가&#x27;로 입증 책임을 옮기는 흐름이 뚜렷했다. 뒤셀도르프 ALUMINIUM 2026과 밀라노 CPHI 2026, 바르셀로나 &#x27;Sustainability in Packaging Europe&#x27;까지 유럽 전시장마다 재활용 콘퍼런스와 재활용 가능 소재가 쏟아졌고, 미국 AmericaPack Summit과 남아프리카 Propak Cape도 SB54·EPR 대응과 모노머티리얼 설계를 핵심 의제로 올렸다. Pulpex의 첫 상업용 종이병 공장, Borouge의 유럽 재생원료 증설, 일본 잉크·접착제 업계의 필름 재활용성 공통 평가 프로토콜까지 더해지며 &#x27;재활용성 증명&#x27;이 소재·설비·업계 표준 전반으로 번지고 있다. 국내에서는 화장품 용기 수요 호조가 펌텍코리아의 실적 기대로 이어지며, 규제보다 한발 앞서 움직이는 용기 공급망의 체감 온도를 보여줬다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">재활용 분담금, 영국·미국·중국에서 동시에 조여진다</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://cdn.creamermedia.com/assets/articles/images/resized/0001304722_resized_propakcape2026pressrelease5image1022.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.miningweekly.com/article/packaging-businesses-under-pressure-turn-to-technology-at-propak-cape-2026-2026-10-09" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — Propak Cape 2026 예고, 모노머티리얼·경량화로 재활용성 승부수</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-09</span><span class="meta-sep"> · </span>Mining Weekly</div>
+<a class="item-desc-link" href="https://www.miningweekly.com/article/packaging-businesses-under-pressure-turn-to-technology-at-propak-cape-2026-2026-10-09" target="_blank" rel="noopener"><p class="item-desc">남아프리카공화국 케이프타운에서 10월 27~29일 열릴 &#x27;Propak Cape 2026&#x27; 준비 소식이 10월 9일 보도됐다. Bobst는 모노머티리얼 재활용 설계 프로그램 &#x27;One Barrier&#x27;를, Polyoak Packaging은 750mL 경량 와인병 &#x27;Eco-Flat&#x27;을 선보일 예정이며, 재활용성·순환경제·생산자책임재활용제도(EPR)를 다루는 무료 세미나도 함께 열린다.</p></a>
+<div class="item-insight">그래서— 포장 전시회의 화두가 선진 시장을 넘어 아프리카까지 &#x27;모노머티리얼·경량화&#x27;로 통일되고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://static.wixstatic.com/media/8a42ce_c053e1867e294677b0279c891cb1134f~mv2.png/v1/fill/w_800,h_400,al_c/8a42ce_c053e1867e294677b0279c891cb1134f~mv2.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.foodbev.com/news/americapack-summit-2026-to-bring-fmcg-packaging-leaders-to-san-diego" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — AmericaPack Summit 2026, SB54·EPR 대응이 최우선 의제로</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-06</span><span class="meta-sep"> · </span>FoodBev Media</div>
+<a class="item-desc-link" href="https://www.foodbev.com/news/americapack-summit-2026-to-bring-fmcg-packaging-leaders-to-san-diego" target="_blank" rel="noopener"><p class="item-desc">미국 FMCG 포장 업계 고위 임원들이 모이는 비공개 포럼 &#x27;AmericaPack Summit 2026&#x27;이 10월 5~6일 캘리포니아 칼스배드에서 열렸다. 캘리포니아 SB54 생산자책임재활용제도(EPR) 대응과 소재 혁신, &#x27;재활용 가능하다는 주장과 실제 회수율 사이의 간극&#x27;이 핵심 의제로 다뤄졌다.</p></a>
+<div class="item-insight">그래서— 미국 포장업계의 화두가 &#x27;재활용 가능 여부&#x27;에서 &#x27;실제로 회수되는가&#x27;로 옮겨가고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Movopack_2.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/operators-unite-to-harmonize-reusable-e-commerce-infrastructure-across-europe/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 유럽 재사용 포장 연합 &#x27;New ERA&#x27; 출범, 전자상거래 반납 체계 표준화 추진</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-08</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/operators-unite-to-harmonize-reusable-e-commerce-infrastructure-across-europe/" target="_blank" rel="noopener"><p class="item-desc">Capsa, Circl&#x27;it, Loopipak, MOBIUSpack 등 유럽 재사용 포장 운영사들이 10월 8일 바르셀로나 &#x27;Sustainability in Packaging Europe&#x27;에서 &#x27;New European Reuse Alliance(New ERA)&#x27;를 중심으로 공동 라벨·반납망 표준화 계획을 발표했다. 2025년 유럽에서 배송된 220억 개 택배 물량을 배경으로, 서로 다른 반납 시스템 때문에 소비자가 아무 수거함에나 재사용 포장을 반납할 수 없는 문제를 해결하려는 취지다.</p></a>
+<div class="item-insight">그래서— PPWR의 전자상거래 재사용 목표를 채우려면 &#x27;각자 다른 반납 시스템&#x27;부터 통일해야 한다는 공감대가 업계 차원에서 먼저 형성됐다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://www.ipcm.it/upload/img/c/600x400-ALUMINIUM2026_WorldsLeadingIndustryFairReturnstoDsseldorfwithEnhancedSurfaceTechnologyFocus.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.ipcm.it/pt/post/aluminium-2026.aspx" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — ALUMINIUM 2026 뒤셀도르프 개막, 지속가능성·재활용 콘퍼런스 신설</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-06</span><span class="meta-sep"> · </span>IPCM</div>
+<a class="item-desc-link" href="https://www.ipcm.it/pt/post/aluminium-2026.aspx" target="_blank" rel="noopener"><p class="item-desc">뒤셀도르프에서 10월 6일부터 8일까지 열린 알루미늄 산업 전시회 &#x27;ALUMINIUM 2026&#x27;에 100여개국에서 800개 이상의 기업이 참가했다. 올해 처음으로 지속가능성·재활용 콘퍼런스와 알루미늄 이노베이션 어워드가 신설되며, 추출·압연부터 표면처리, 1차 생산과 재활용까지 아우르는 전시 구성을 갖췄다.</p></a>
+<div class="item-insight">그래서— 알루미늄 업계도 &#x27;전시&#x27;보다 &#x27;순환 전략 회의&#x27;에 무게를 두기 시작했다. 캔·화장품 용기용 알루미늄 공급망의 탈탄소 경쟁이 본격화되는 신호다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_ACG_Recyclopod_PP.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/recyclable-high-barrier-polypropylene-pharma-blister-revealed-by-acg/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — ACG, 재활용 가능한 고차단 PP 블리스터 &#x27;RecycloPod PP Ultra&#x27; 공개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-06</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/recyclable-high-barrier-polypropylene-pharma-blister-revealed-by-acg/" target="_blank" rel="noopener"><p class="item-desc">인도 ACG가 10월 6일부터 열린 밀라노 CPHI 2026에서 PP/EVOH/PP 구조의 모노 폴리프로필렌 계열 의약품 블리스터 &#x27;RecycloPod PP Ultra&#x27;를 공개했다. 수분·산소 차단성을 모두 갖춰 기존 PVC·알루미늄 복합 블리스터를 대체할 수 있으며, EU 포장 규정(PPWR) 대응을 내세운 &#x27;Pod&#x27; 제품군의 첫 출시작이다.</p></a>
+<div class="item-insight">그래서— 화장품 업계가 고민하는 &#x27;차단성과 재활용성 중 하나를 포기해야 하는&#x27; 딜레마가 제약 포장에서 먼저 풀리고 있다. 뷰티 용기에도 같은 구조 전환이 이어질 가능성이 크다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=527,fit=cover,bg=white,f=auto,quality=high,sharpen=2,g=face/21/2026/10/2026100808323149453_1.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">한국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.mt.co.kr/stock/2026/10/08/2026100808323149453" target="_blank" rel="noopener"><h3 class="item-headline">🇰🇷 한국 — 펌텍코리아, 화장품 용기 수요 호조로 3분기 실적 기대 ↑</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-08</span><span class="meta-sep"> · </span>머니투데이</div>
+<a class="item-desc-link" href="https://www.mt.co.kr/stock/2026/10/08/2026100808323149453" target="_blank" rel="noopener"><p class="item-desc">다올투자증권이 10월 8일 펌텍코리아의 3분기 실적이 화장품 용기 수요 호조에 힘입어 시장 기대치를 웃돌 것으로 전망했다. 펌프·용기 생산능력 확대와 인디 브랜드 고객군 확대가 맞물리며 주요 고객사 수주가 견조하게 이어지고 있다는 평가다.</p></a>
+<div class="item-insight">그래서— &#x27;용기 공급이 빠듯하다&#x27;는 업계 체감이 숫자로도 확인되고 있다. 화장품 용기 제조사의 설비 증설 경쟁이 이어질 전망이다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/bltc43d02abd0964e95/6ac7b4e4a4df602d97502d38/Novolex.png?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.plasticstoday.com/packaging/novolex-opens-applied-innovation-center-in-texas" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 노벨렉스, 텍사스에 포장 테스트 전용 &#x27;응용혁신센터&#x27; 신설</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-08</span><span class="meta-sep"> · </span>PlasticsToday</div>
+<a class="item-desc-link" href="https://www.plasticstoday.com/packaging/novolex-opens-applied-innovation-center-in-texas" target="_blank" rel="noopener"><p class="item-desc">노벨렉스가 10월 6일 텍사스 로어노크에 1만7,500평방피트 규모의 &#x27;응용혁신센터(Applied Innovation Center)&#x27;를 열었다고 발표했다. 식품서비스·식료품·소매·카페·베이커리 등 5개 매장 환경을 실물로 구현해, 고객이 포장재를 실제 조건에서 비교·테스트할 수 있도록 했다.</p></a>
+<div class="item-insight">그래서— &#x27;샘플을 보내 달라&#x27;던 포장재 영업 방식이 &#x27;매장처럼 꾸민 공간에서 직접 테스트하라&#x27;로 바뀌고 있다. 규제·소재 전환이 잦아질수록 이런 실증 공간의 가치는 커진다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/bltdacd6a4ccf9dd731/6ac9074ee51205801b5a8392/Screenshot_2026-10-09_at_10.57.5.png?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.plasticstoday.com/packaging/plastic-ingenuity-s-paige-greenberg-highlights-sustainable-packaging-innovation-for-pack-expo" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — Plastic Ingenuity, PVC 의료기기 릴을 재활용 가능 PET로 전환해 수상</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-09</span><span class="meta-sep"> · </span>PlasticsToday</div>
+<a class="item-desc-link" href="https://www.plasticstoday.com/packaging/plastic-ingenuity-s-paige-greenberg-highlights-sustainable-packaging-innovation-for-pack-expo" target="_blank" rel="noopener"><p class="item-desc">미국 Plastic Ingenuity가 용접형 PVC로 만들던 길이 약 76cm 의료기기 포장 릴을 맞물리는 두 개의 PET 반구조로 재설계해 Ameristar Award 지속가능 포장 부문을 수상했다. 이 재설계로 매년 23만6,000파운드(약 107톤)의 소재가 재활용 가능한 형태로 전환됐으며, 10월 18일 개막하는 Pack Expo 2026에서 소개될 예정이다.</p></a>
+<div class="item-insight">그래서— 단일 품목 재설계만으로 &#x27;재활용 불가&#x27;였던 포장을 100톤 단위로 되돌릴 수 있다는 걸 보여준 사례다. 화장품 2차 포장에도 적용할 여지가 크다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.allinprint.com/static/common/images/drupa.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">중국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">기술혁신</span></div>
+<a class="item-headline-link" href="https://www.allinprint.com/en/press_center/exhibition_ews/4028.html" target="_blank" rel="noopener"><h3 class="item-headline">🇨🇳 중국 — &#x27;올 인 프린트 차이나 2026&#x27; 상하이서 개막, 포장 인쇄도 핵심 축</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-12</span><span class="meta-sep"> · </span>All in Print China</div>
+<a class="item-desc-link" href="https://www.allinprint.com/en/press_center/exhibition_ews/4028.html" target="_blank" rel="noopener"><p class="item-desc">중국 최대 인쇄 전시회 &#x27;올 인 프린트 차이나(All in Print China)&#x27; 10주년 행사가 10월 12일 상하이 신국제박람중심에서 개막했다. 10개 홀, 12만㎡ 규모로 열리며 디지털 인쇄·후가공과 함께 폴딩카톤·라벨·연포장·골판지 등 포장 인쇄 전 분야가 7개 테마관 중 하나로 편성됐다.</p></a>
+<div class="item-insight">그래서— 중국 포장 인쇄업계도 &#x27;찍어내는 기술&#x27;보다 &#x27;재활용 가능한 인쇄·라미네이션 기술&#x27;을 전면에 내세우는 쪽으로 옮겨가고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/blt6fd5f075f172992d/6ac6416e0b44bc40e0aae99d/CNG.png?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.plasticstoday.com/packaging/cng-expands-recycle-ready-films-platform" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — CNG, 재활용 친화형 MDO-PE 필름 2세대 플랫폼 확장</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-07</span><span class="meta-sep"> · </span>PlasticsToday</div>
+<a class="item-desc-link" href="https://www.plasticstoday.com/packaging/cng-expands-recycle-ready-films-platform" target="_blank" rel="noopener"><p class="item-desc">Charter Next Generation(CNG)이 10월 7일 내열성과 고차단 성능, 무광 마감을 갖춘 2세대 MDO-PE(기계방향연신 폴리에틸렌) 필름 플랫폼을 공개했다. 회사는 이 신제품이 브랜드의 생산자책임재활용제도(EPR) 분담금을 낮출 수 있는 선택지를 넓혀준다고 설명했다.</p></a>
+<div class="item-insight">그래서— 연포장 업계에서 &#x27;재활용 용이성&#x27;이 곧 &#x27;분담금 절감&#x27;이라는 직접적인 비용 언어로 번역되고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/artience0710.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/industry-first-common-protocol-for-evaluating-film-packaging-recyclability-in-japan/" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 일본서 &#x27;필름 포장 재활용성 평가&#x27; 업계 공통 프로토콜 첫 도입</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-07</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/industry-first-common-protocol-for-evaluating-film-packaging-recyclability-in-japan/" target="_blank" rel="noopener"><p class="item-desc">일본 artience(도요잉크)와 DIC가 10월 7일 연포장 필름의 탈묵(deinking)·탈접착(debonding) 재활용성을 평가하는 업계 최초의 공통 프로토콜을 공개했다. 그동안 기업마다 다른 기준으로 평가해 비교가 어려웠던 필름 재활용성을, 시험 절차와 평가 기준, 보고 양식까지 표준화해 컨버터·브랜드·재활용업체가 공유할 수 있게 했다.</p></a>
+<div class="item-insight">그래서— 잉크·접착제 제조사가 &#x27;재활용성 평가 기준&#x27; 자체를 표준화하는 쪽으로 움직이면, 화장품 파우치·리필백의 재활용 인증도 한층 쉬워질 것이다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Pulpex_Glasgow.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/pulpex-opens-first-commercial-facility-for-paper-bottle-manufacturing/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — Pulpex, 글래스고에 첫 상업용 &#x27;종이병&#x27; 공장 가동</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-08</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/pulpex-opens-first-commercial-facility-for-paper-bottle-manufacturing/" target="_blank" rel="noopener"><p class="item-desc">영국 Pulpex가 10월 8일 스코틀랜드 글래스고 인근 웨스트웨이에 연간 4,000만 개 생산 능력을 갖춘 첫 상업용 &#x27;섬유병(종이병)&#x27; 공장을 열었다고 밝혔다. 가정용 세제 브랜드 smol과 스코틀랜드산 미네랄워터 Purely Scottish가 초기 고객으로 참여하며, 올해 생산 물량의 90% 이상이 이미 계약된 상태다.</p></a>
+<div class="item-insight">그래서— &#x27;파일럿 생산&#x27;에 머물던 종이병이 상업 규모 공장을 확보하며, 화장품·향수 업계의 &#x27;병 소재 전환&#x27; 선택지에 처음으로 실제 공급망이 생겼다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Borouge.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/investments-to-boost-borouges-mechanical-recycling-capacity-for-plastics/" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — Borouge, 오스트리아·독일 재활용 설비에 투자해 연 1.4만 톤 증설</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-07</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/investments-to-boost-borouges-mechanical-recycling-capacity-for-plastics/" target="_blank" rel="noopener"><p class="item-desc">아부다비 기반 Borouge인터내셔널이 10월 7일 독일 니더게브라(옛 mtm plastics)와 오스트리아 빌돈(옛 Ecoplast) 재활용 설비에 투자해 연간 재생원료 생산량을 약 1만4,000톤 늘린다고 발표했다. 오스트리아 증설분은 주로 연포장용 재생 폴리에틸렌에 투입될 예정이며, 두 설비 모두 2027년 가동을 목표로 한다.</p></a>
+<div class="item-insight">그래서— 중동 석유화학 기업까지 유럽 재생원료 설비에 직접 투자하는 건, EU 포장 규정의 재생원료 함량 목표가 &#x27;언젠가&#x27;가 아니라 &#x27;지금 확보해야 할 원료&#x27;로 받아들여지고 있다는 뜻이다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>
