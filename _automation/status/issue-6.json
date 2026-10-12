@@ -1,0 +1,13 @@
+{
+ "number": 6,
+ "ok": false,
+ "final": true,
+ "live": null,
+ "problems": [
+  "only 5 newsletter items survived verification (minimum 12)"
+ ],
+ "dropped": [],
+ "items": 5,
+ "photos": 5,
+ "checked_at": "2026-10-12T04:28:55.198587+00:00"
+}
