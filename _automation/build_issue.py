@@ -10,7 +10,7 @@ import os
 import sys
 
 BLUE_TAGS = {"글로벌", "인도", "중국", "유럽", "아세안", "미국", "한국", "영국", "일본", "지속가능", "발상혁신"}
-BASE_URL = "https://angbabyang-ux.github.io/packaging-intelligence-reports/"
+BASE_URL = "https://nextpackageteam.github.io/packaging-intelligence-reports/"
 esc = htmlmod.escape
 
 

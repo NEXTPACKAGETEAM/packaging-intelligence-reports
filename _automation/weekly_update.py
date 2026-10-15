@@ -102,7 +102,7 @@ log(r.stdout + r.stderr)
 r = subprocess.run(['git', 'push'], cwd=str(GH_SITE), capture_output=True, text=True)
 log(r.stdout + r.stderr)
 
-log(f"\n=== 완료 {TODAY} - https://angbabyang-ux.github.io/packaging-intelligence-reports/ ===")
+log(f"\n=== 완료 {TODAY} - https://nextpackageteam.github.io/packaging-intelligence-reports/ ===")
 
 log_path = BASE / f'weekly_update_log_{TODAY}.txt'
 log_path.write_text('\n'.join(LOG), encoding='utf-8')

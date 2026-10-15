@@ -9,7 +9,7 @@ import json
 import os
 import sys
 
-BASE_URL = "https://angbabyang-ux.github.io/packaging-intelligence-reports/"
+BASE_URL = "https://nextpackageteam.github.io/packaging-intelligence-reports/"
 FONT = "'Apple SD Gothic Neo','Malgun Gothic',sans-serif"
 INK, SLATE, ACCENT, FUTURE, LINE = "#17191D", "#6B6F7B", "#1B4FE0", "#7B2D8B", "#E6E4DC"
 
