@@ -1,0 +1,22 @@
+{
+ "number": 7,
+ "ok": false,
+ "final": true,
+ "live": null,
+ "problems": [
+  "only 7 newsletter items survived verification (minimum 12)"
+ ],
+ "dropped": [
+  {
+   "headline": "소믹 패키징, PACK EXPO서 신규 기계 플랫폼 북미 데뷔",
+   "reason": "no verifiable photo"
+  },
+  {
+   "headline": "인디아 폴딩카톤·인디아코르 엑스포 뭄바이서 동시 개막",
+   "reason": "no verifiable photo"
+  }
+ ],
+ "items": 7,
+ "photos": 7,
+ "checked_at": "2026-10-19T04:23:01.499974+00:00"
+}
