@@ -76,7 +76,7 @@ jobs:
           status="_automation/status/issue-$N.json"
           if [ "$(python -c "import json;print(json.load(open('$status'))['ok'])")" != "True" ]; then exit 0; fi
           gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
-          url="https://angbabyang-ux.github.io/packaging-intelligence-reports/newsletter-$N.html"
+          url="https://nextpackageteam.github.io/packaging-intelligence-reports/newsletter-$N.html"
           want=$(python -c "import json;print(json.load(open('$status'))['photos'])")
           live=false
           for i in $(seq 1 40); do
