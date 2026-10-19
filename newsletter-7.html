@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 7호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">할랄 마감일 넘어서자, 규제 시계는 2030년을 가리킨다</h1>
+    <div class="meta-bar">
+      <span class="accent">7호</span><span class="meta-sep">·</span>
+      2026.10.13 &ndash; 10.19<span class="meta-sep">·</span>
+      신선 <b>13</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">3</span><span class="meta-sep">·</span>
+      사진 13
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주는 전시장과 규제 시계가 동시에 돌아간 한 주였다. 시카고 PACK EXPO 인터내셔널의 재사용 포장관과 &quot;재활용성 설계는 법적 의무&quot; 세션, 선전·뭄바이의 포장 전시까지 아시아·북미 전시 시즌이 한꺼번에 몰렸고, 인도네시아는 10월 17일부터 화장품 할랄 인증을 전면 의무화하며 동남아 수출 문턱을 한 단계 높였다. 유럽에서는 시셰캄이 유리병 경량화 라인업을 예고했고, 규제 쪽에서는 프랑스의 B2B 포장 분담금 제도와 EU의 재생원료 함량·호텔 미니어처 금지가 모두 2027~2030년을 향해 시계를 맞추고 있다. 중국 뷰티 브랜드 플라워노우즈가 동화풍 패키징으로 울타뷰티에 입점한 사례는, 디자인 자체가 진입 전략이 되는 흐름을 보여준다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">재생원료·미니어처 금지, EU 규제가 2030년을 겨눈다</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://sc247.s3.amazonaws.com/images/made/images/2026_article/degree-boxes-GettyImages-2286896333_450_220_60_s_c1.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.supplychain247.com/article/sustainability_in_focus_at_pack_expo_2026" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — PACK EXPO 교육관, &quot;재활용성 설계는 이제 법적 의무&quot; 세션 편성</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-18</span><span class="meta-sep"> · </span>Supply Chain 247</div>
+<a class="item-desc-link" href="https://www.supplychain247.com/article/sustainability_in_focus_at_pack_expo_2026" target="_blank" rel="noopener"><p class="item-desc">10월 18일부터 21일까지 시카고에서 열리는 PACK EXPO 인터내셔널 2026의 지속가능성 교육관에 &quot;재활용성 설계는 법으로 요구된다(Design for Recyclability is Required by Law)&quot;라는 세션이 편성됐다. 2,600개 이상의 참가업체와 48,000명 이상의 참관객이 모이는 행사로, 생산자책임재활용제도(EPR) 대응 교육이 전시와 함께 진행된다.</p></a>
+<div class="item-insight">그래서— 포장 전시회의 교육 프로그램이 &#x27;트렌드 소개&#x27;에서 &#x27;법적 의무 대응&#x27;으로 무게중심을 옮기고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639166015889869929A_girl_in_a_hijab_posing_with_her_hand_in_front_of_her_face..jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">아세안</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.personalcareinsights.com/news/indonesia-halal-cosmetics-crackdown.html" target="_blank" rel="noopener"><h3 class="item-headline">🌏 아세안 — 인도네시아, 10월 17일부터 화장품 할랄 인증 전면 의무화</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-17</span><span class="meta-sep"> · </span>Personal Care Insights</div>
+<a class="item-desc-link" href="https://www.personalcareinsights.com/news/indonesia-halal-cosmetics-crackdown.html" target="_blank" rel="noopener"><p class="item-desc">인도네시아에서 10월 17일부터 유통되는 모든 화장품에 할랄 인증이 전면 의무화됐다. 정부는 유예기간 연장이나 재고 소진 예외를 두지 않는다는 입장이며, 위반 시 경고·과징금과 함께 제품 유통 중단 조치가 내려진다.</p></a>
+<div class="item-insight">그래서— 동남아 수출을 노리는 화장품 용기·완제품 업체는 처방뿐 아니라 포장·라벨까지 할랄 인증 범위에 포함되는지 다시 점검해야 한다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_EU_Commission--7-.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/eu-commission-offers-epr-guidance-for-small-businesses-under-ppwr/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — EU 집행위, PPWR 소상공인 생산자책임(EPR) 가이던스 발표</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-15</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/eu-commission-offers-epr-guidance-for-small-businesses-under-ppwr/" target="_blank" rel="noopener"><p class="item-desc">유럽연합 집행위원회가 연간 포장재 10톤 미만을 사용하는 소상공인에 적용되는 생산자책임재활용제도(EPR) 면제·완화 조치를 10월 15일 안내했다. 회원국과 생산자책임기구(PRO)에는 등록비 면제, 균일한 분담금 책정 등 과도한 부담을 피하라고 권고했으며, 각국별 대리인 선임 의무를 없애는 방안도 유럽의회·이사회에서 논의 중이다.</p></a>
+<div class="item-insight">그래서— PPWR 집행 초기 혼란을 줄이려는 신호지만, 국가별 등록 의무 자체는 그대로여서 중소 브랜드의 실무 부담은 당장 크게 줄지 않을 전망이다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/bltd1a4d5ea1e73f586/6acfcf9efa42c728eb2a770c/Sealed_Air_CA.png?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.plasticstoday.com/packaging/sealed-air-expands-foam-capacity-in-madera" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 씨일드에어, 캘리포니아 마데라 공장 폴리에틸렌 폼 생산능력 확충</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-14</span><span class="meta-sep"> · </span>PlasticsToday</div>
+<a class="item-desc-link" href="https://www.plasticstoday.com/packaging/sealed-air-expands-foam-capacity-in-madera" target="_blank" rel="noopener"><p class="item-desc">씨일드에어(Sealed Air)가 10월 14일 캘리포니아 마데라 공장의 압출 폴리에틸렌(PE) 폼 생산능력을 확충했다고 발표했다. 에타폼(Ethafoam)과 스트라토셀(Stratocell) 시트 제품이 대상으로, 자동차·전자·의료·산업용 포장에 쓰이며 북미와 중남미 가공업체·유통업체·최종 사용자 공급을 겨냥한다.</p></a>
+<div class="item-insight">그래서— 보호 포장재 공급망이 북미 내 생산 거점을 늘려 리드타임 리스크를 줄이려는 흐름이 뚜렷해지고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://reusables.org/wp-content/uploads/2026/08/PE-PRess-Release-1.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://reusables.org/inner-loop-library/industry-news/reusable-packaging-association-to-lead-industrys-largest-showcase-of-reusable-packaging-at-pack-expo-international-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — PACK EXPO 인터내셔널 2026, 재사용 포장관에 75개사 결집</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-18</span><span class="meta-sep"> · </span>Reusable Packaging Association</div>
+<a class="item-desc-link" href="https://reusables.org/inner-loop-library/industry-news/reusable-packaging-association-to-lead-industrys-largest-showcase-of-reusable-packaging-at-pack-expo-international-2026/" target="_blank" rel="noopener"><p class="item-desc">10월 18일부터 21일까지 시카고 매코믹 플레이스에서 열리는 &#x27;PACK EXPO 인터내셔널 2026&#x27;에 재사용 포장협회(RPA)가 이끄는 &#x27;재사용 포장관&#x27;이 들어선다. 팔레트·토트·빈·컨테이너와 스마트 추적 기술을 다루는 75개 이상의 기업이 참가하며, 1차·소비자 포장의 재사용·리필에 초점을 맞춘 신설 구역 &#x27;넥스트젠 리유즈 코리더&#x27;도 처음 문을 연다.</p></a>
+<div class="item-insight">그래서— 재사용 포장이 산업용 자재 중심에서 1차 포장·리필 영역까지 전시 구역을 넓히고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://cntoolbox.com/storage/media/5004/conversions/a2319bed-2d76-4e04-8e65-21a1a264f88b-small.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">중국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://cntoolbox.com/expos/5110-2026-propak-shenzhen-food-processing-and-packaging-exhibition" target="_blank" rel="noopener"><h3 class="item-headline">🇨🇳 중국 — 프로팩 선전 2026 개막, 2,500개사·15만 명 참관 전망</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-13</span><span class="meta-sep"> · </span>CNToolbox</div>
+<a class="item-desc-link" href="https://cntoolbox.com/expos/5110-2026-propak-shenzhen-food-processing-and-packaging-exhibition" target="_blank" rel="noopener"><p class="item-desc">중국 선전국제회의전시센터에서 10월 13일부터 15일까지 &#x27;프로팩 선전(ProPak Shenzhen) 2026 식품가공·포장전&#x27;이 열렸다. 주최 측은 2,500개 이상의 기업이 참가하고 15만 명 이상이 참관할 것으로 예상했으며, 포장 설비와 로봇·디지털 공장 전환 등 지능형 장비 전시가 함께 구성됐다.</p></a>
+<div class="item-insight">그래서— 중국 포장 설비 전시의 중심이 상하이 일변도에서 선전 등 남부 거점으로도 분산되고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="http://www.glassonweb.com/sites/default/files/news/2026/Brau-Beviale-Fair.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">기술혁신</span></div>
+<a class="item-headline-link" href="https://www.glassonweb.com/news/sisecam-participate-braubeviale-fair-0" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 시셰캄, 브라우베비알레 앞두고 경량 유리병 라인업 예고</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-16</span><span class="meta-sep"> · </span>Glass on Web</div>
+<a class="item-desc-link" href="https://www.glassonweb.com/news/sisecam-participate-braubeviale-fair-0" target="_blank" rel="noopener"><p class="item-desc">터키 시셰캄(Şişecam)이 10월 16일, 11월 뉘른베르크에서 열리는 &#x27;브라우베비알레&#x27; 참가 계획을 밝히며 경량 유리병 라인업을 예고했다. 기존 110g 초경량 미네랄워터 병에 이어 300g·400g대 경량 와인·음료병 대안을 포트폴리오에 추가했다고 설명했다.</p></a>
+<div class="item-insight">그래서— 유리 용기 업계가 &#x27;재활용 가능&#x27;을 넘어 &#x27;무게 자체를 줄이는&#x27; 경쟁으로 넘어가고 있다. 화장품 유리 용기의 경량화 요구도 이어질 전망이다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.beautypackaging.com/wp-content/uploads/sites/8/2026/10/FlowerKnowsWinterCollection.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">발상혁신</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.beautypackaging.com/?p=81235" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 플라워노우즈, 울타뷰티 입점... 동화풍 패키징으로 중국 뷰티 첫 진출</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-13</span><span class="meta-sep"> · </span>Beauty Packaging</div>
+<a class="item-desc-link" href="https://www.beautypackaging.com/?p=81235" target="_blank" rel="noopener"><p class="item-desc">중국 뷰티 브랜드 플라워노우즈(Flower Knows)가 10월 13일 보도에 따라 울타뷰티(Ulta Beauty) 매장 450곳에 입점했다고 전해졌다. 은장식과 보석 질감을 살린 &#x27;스노우 발레&#x27; 컬렉션과 투명 글로스·벨벳 컬러를 양 끝에 담은 듀얼 립글로스 등 동화적 패키징 디자인을 앞세워, 울타뷰티에 입점한 첫 중국 브랜드가 됐다.</p></a>
+<div class="item-insight">그래서— 중국 뷰티 브랜드의 북미 진출 무기가 &#x27;가격&#x27;이 아니라 &#x27;패키징 디자인&#x27;으로 바뀌고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/Novelis_Nivea_20240228_717850_MarcoProsch-73-.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/nivea-creme-tin-now-made-from-95-recycled-aluminium/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 노벨리스·바이어스도르프, 니베아 틴 캔 재생알루미늄 비율 95%로 상향</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-13</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/nivea-creme-tin-now-made-from-95-recycled-aluminium/" target="_blank" rel="noopener"><p class="item-desc">노벨리스(Novelis)와 바이어스도르프(Beiersdorf)가 니베아 크림의 상징인 틴 캔 재생알루미늄 함량을 기존 80%에서 95%로 높였다고 10월 13일 발표했다. 합금 구성과 제조 공정을 조정해 기존 틴 캔의 내구성과 외관을 유지했으며, 독일에서 올해 초부터 판매를 시작해 2027년부터 유럽 및 다른 시장으로 확대할 계획이다.</p></a>
+<div class="item-insight">그래서— 화장품 금속 용기의 재생원료 비율 경쟁이 80%대에서 95%대로 한 단계 올라섰다. 100% 재생알루미늄 용기의 관건은 이제 &#x27;기술&#x27;이 아니라 &#x27;원료 확보량&#x27;이다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Vivomer.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">사용성</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/collection-points-established-for-shellworks-plant-based-compostable-packs/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — MY그룹, 셀웍스 생분해 소재 뷰티 용기 회수망 매장 800곳으로 확대</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-13</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/collection-points-established-for-shellworks-plant-based-compostable-packs/" target="_blank" rel="noopener"><p class="item-desc">영국 MY그룹(MYGroup)이 셀웍스(Shellworks)의 식물성 퇴비화 생분해 소재 &#x27;비보머(Vivomer)&#x27;로 만든 뷰티 용기를 회수하는 매장 수거함을 800곳 이상으로 늘렸다고 10월 13일 보도됐다. 부츠(Boots)·해롯즈(Harrods)·셀프리지스(Selfridges) 등의 리필·회수 캠페인과 연계되며, 수거된 용기는 헐(Hull) 소재 자체 공장에서 목재 대체 보드 &#x27;MY보드&#x27;로 재가공된다.</p></a>
+<div class="item-insight">그래서— 생분해 소재 용기도 &#x27;그냥 버려도 되는 것&#x27;이 아니라 &#x27;별도로 모아야 가치가 생기는 것&#x27;이라는 인식이 매장 회수망 확대로 자리 잡고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Ambio.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/recycled-polymer-procurement-platform-raises-eur5-1m-in-seed-funding/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 핀란드 암비오, AI 기반 재생플라스틱 조달 플랫폼에 510만 유로 시드 투자</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-15</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/recycled-polymer-procurement-platform-raises-eur5-1m-in-seed-funding/" target="_blank" rel="noopener"><p class="item-desc">핀란드 헬싱키 스타트업 암비오(Ambio)가 b2벤처(b2venture) 주도로 510만 유로(약 80억 원) 규모의 시드 투자를 유치했다고 10월 15일 보도됐다. 품질 편차가 크고 조달 과정이 파편화된 재생플라스틱 시장을 겨냥해, AI 기반으로 소싱부터 장기 공급까지 책임지는 조달 플랫폼을 운영하며 투자금은 폴리머 품목 확대와 국제 진출에 쓰인다.</p></a>
+<div class="item-insight">그래서— 재생원료 &#x27;구매&#x27;자체를 대신 책임져주는 중개 서비스가 투자를 받는다는 건, 재생원료 조달의 난도가 여전히 높다는 뜻이다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Sun_Chemical.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/new-flexo-inks-target-food-safe-low-migration-labels-and-packaging/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 썬케미칼, 식품 안전 저이행 플렉소 잉크 신제품군 &#x27;솔라플렉스 FSP&#x27; 출시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-16</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/new-flexo-inks-target-food-safe-low-migration-labels-and-packaging/" target="_blank" rel="noopener"><p class="item-desc">썬케미칼(Sun Chemical)이 독일 잉크 규정(GIO)과 스위스 잉크 규정(SIO)을 충족하는 저이행(low-migration) UV 플렉소 잉크 신제품군 &#x27;솔라플렉스 FSP&#x27;를 10월 16일 공개했다. 표준·고농도 4원색 공정잉크와 고강도 단일안료 혼합색으로 구성되며, 분당 200미터 이상 인쇄 속도에서도 이행·냄새 테스트를 유럽 고객사와 함께 진행했다.</p></a>
+<div class="item-insight">그래서— 라벨·연포장용 잉크까지 &#x27;식품 안전&#x27;을 증명하는 시험 데이터를 함께 들고 나오는 것이 이제 기본 조건이 되고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/01_Cazcabel_Blanco-and-Reposado_New-Bottles_Landscape-1.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">발상혁신</span><span class="tag tag-neutral">사용성</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/cazcabel-tequila-unveils-new-bottle-for-blanco-and-reposado/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 카즈카벨 테킬라, 아가베 피냐 형상 담은 새 보틀 디자인 공개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-16</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/cazcabel-tequila-unveils-new-bottle-for-blanco-and-reposado/" target="_blank" rel="noopener"><p class="item-desc">카즈카벨(Cazcabel) 테킬라가 블랑코·레포사도 제품의 새 보틀 디자인을 10월 16일 공개했다. 테킬라의 원료인 아가베 피냐 모양을 라벨 테두리와 병 바닥의 돔형 펀트에 반영했고, 목 라벨에는 생산지 고도(1,964m)와 수석 테킬레라의 서명을 새겨 넣었다. 70cl 병은 10월부터 영국·유럽에, 75cl·1L 병은 2027년 1월부터 미국에 순차 적용된다.</p></a>
+<div class="item-insight">그래서— 주류 보틀 디자인이 &#x27;브랜드 로고&#x27;보다 &#x27;원산지 서사&#x27;를 용기 구조 자체에 새겨 넣는 방향으로 가고 있다. 프리미엄 화장품 용기의 스토리텔링 설계와 같은 결이다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>

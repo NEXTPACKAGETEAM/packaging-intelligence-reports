@@ -6,6 +6,65 @@
  "reg_section_title": "재생원료·미니어처 금지, EU 규제가 2030년을 겨눈다",
  "newsletter_items": [
   {
+   "is_reg": true,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "PACK EXPO 교육관, \"재활용성 설계는 이제 법적 의무\" 세션 편성",
+   "url": "https://www.supplychain247.com/article/sustainability_in_focus_at_pack_expo_2026",
+   "date": "2026-10-18",
+   "source": "Supply Chain 247",
+   "img": "https://sc247.s3.amazonaws.com/images/made/images/2026_article/degree-boxes-GettyImages-2286896333_450_220_60_s_c1.jpg",
+   "tags": [
+    "미국",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "10월 18일부터 21일까지 시카고에서 열리는 PACK EXPO 인터내셔널 2026의 지속가능성 교육관에 \"재활용성 설계는 법으로 요구된다(Design for Recyclability is Required by Law)\"라는 세션이 편성됐다. 2,600개 이상의 참가업체와 48,000명 이상의 참관객이 모이는 행사로, 생산자책임재활용제도(EPR) 대응 교육이 전시와 함께 진행된다.",
+   "insight": "그래서— 포장 전시회의 교육 프로그램이 '트렌드 소개'에서 '법적 의무 대응'으로 무게중심을 옮기고 있다.",
+   "event_date": "2026-10-18",
+   "source_published": "2026-08-10"
+  },
+  {
+   "is_reg": true,
+   "flag": "🌏",
+   "region": "아세안",
+   "headline": "인도네시아, 10월 17일부터 화장품 할랄 인증 전면 의무화",
+   "url": "https://www.personalcareinsights.com/news/indonesia-halal-cosmetics-crackdown.html",
+   "date": "2026-10-17",
+   "source": "Personal Care Insights",
+   "img": "https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639166015889869929A_girl_in_a_hijab_posing_with_her_hand_in_front_of_her_face..jpg",
+   "tags": [
+    "아세안",
+    "S3상용",
+    "업계공인",
+    "지속가능"
+   ],
+   "body": "인도네시아에서 10월 17일부터 유통되는 모든 화장품에 할랄 인증이 전면 의무화됐다. 정부는 유예기간 연장이나 재고 소진 예외를 두지 않는다는 입장이며, 위반 시 경고·과징금과 함께 제품 유통 중단 조치가 내려진다.",
+   "insight": "그래서— 동남아 수출을 노리는 화장품 용기·완제품 업체는 처방뿐 아니라 포장·라벨까지 할랄 인증 범위에 포함되는지 다시 점검해야 한다.",
+   "event_date": "2026-10-17",
+   "source_published": "2026-06-09"
+  },
+  {
+   "is_reg": true,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "EU 집행위, PPWR 소상공인 생산자책임(EPR) 가이던스 발표",
+   "url": "https://www.packagingeurope.com/eu-commission-offers-epr-guidance-for-small-businesses-under-ppwr/",
+   "date": "2026-10-15",
+   "source": "Packaging Europe",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_EU_Commission--7-.png",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "업계공인",
+    "지속가능"
+   ],
+   "body": "유럽연합 집행위원회가 연간 포장재 10톤 미만을 사용하는 소상공인에 적용되는 생산자책임재활용제도(EPR) 면제·완화 조치를 10월 15일 안내했다. 회원국과 생산자책임기구(PRO)에는 등록비 면제, 균일한 분담금 책정 등 과도한 부담을 피하라고 권고했으며, 각국별 대리인 선임 의무를 없애는 방안도 유럽의회·이사회에서 논의 중이다.",
+   "insight": "그래서— PPWR 집행 초기 혼란을 줄이려는 신호지만, 국가별 등록 의무 자체는 그대로여서 중소 브랜드의 실무 부담은 당장 크게 줄지 않을 전망이다.",
+   "source_published": "2026-10-15"
+  },
+  {
    "is_reg": false,
    "flag": "🇺🇸",
    "region": "미국",
@@ -13,7 +72,7 @@
    "url": "https://www.plasticstoday.com/packaging/sealed-air-expands-foam-capacity-in-madera",
    "date": "2026-10-14",
    "source": "PlasticsToday",
-   "img": "",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/bltd1a4d5ea1e73f586/6acfcf9efa42c728eb2a770c/Sealed_Air_CA.png?disable=upscale&width=1200&height=630&fit=crop",
    "tags": [
     "미국",
     "S3상용",
@@ -32,7 +91,7 @@
    "url": "https://reusables.org/inner-loop-library/industry-news/reusable-packaging-association-to-lead-industrys-largest-showcase-of-reusable-packaging-at-pack-expo-international-2026/",
    "date": "2026-10-18",
    "source": "Reusable Packaging Association",
-   "img": "",
+   "img": "https://reusables.org/wp-content/uploads/2026/08/PE-PRess-Release-1.png",
    "tags": [
     "미국",
     "S3상용",
@@ -42,27 +101,7 @@
    "body": "10월 18일부터 21일까지 시카고 매코믹 플레이스에서 열리는 'PACK EXPO 인터내셔널 2026'에 재사용 포장협회(RPA)가 이끄는 '재사용 포장관'이 들어선다. 팔레트·토트·빈·컨테이너와 스마트 추적 기술을 다루는 75개 이상의 기업이 참가하며, 1차·소비자 포장의 재사용·리필에 초점을 맞춘 신설 구역 '넥스트젠 리유즈 코리더'도 처음 문을 연다.",
    "insight": "그래서— 재사용 포장이 산업용 자재 중심에서 1차 포장·리필 영역까지 전시 구역을 넓히고 있다.",
    "event_date": "2026-10-18",
-   "source_published": null
-  },
-  {
-   "is_reg": true,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "PACK EXPO 교육관, \"재활용성 설계는 이제 법적 의무\" 세션 편성",
-   "url": "https://www.supplychain247.com/article/sustainability_in_focus_at_pack_expo_2026",
-   "date": "2026-10-18",
-   "source": "Supply Chain 247",
-   "img": "",
-   "tags": [
-    "미국",
-    "S3상용",
-    "지속가능",
-    "업계공인"
-   ],
-   "body": "10월 18일부터 21일까지 시카고에서 열리는 PACK EXPO 인터내셔널 2026의 지속가능성 교육관에 \"재활용성 설계는 법으로 요구된다(Design for Recyclability is Required by Law)\"라는 세션이 편성됐다. 2,600개 이상의 참가업체와 48,000명 이상의 참관객이 모이는 행사로, 생산자책임재활용제도(EPR) 대응 교육이 전시와 함께 진행된다.",
-   "insight": "그래서— 포장 전시회의 교육 프로그램이 '트렌드 소개'에서 '법적 의무 대응'으로 무게중심을 옮기고 있다.",
-   "event_date": "2026-10-18",
-   "source_published": null
+   "source_published": "2026-08-04"
   },
   {
    "is_reg": false,
@@ -72,7 +111,7 @@
    "url": "https://cntoolbox.com/expos/5110-2026-propak-shenzhen-food-processing-and-packaging-exhibition",
    "date": "2026-10-13",
    "source": "CNToolbox",
-   "img": "",
+   "img": "https://cntoolbox.com/storage/media/5004/conversions/a2319bed-2d76-4e04-8e65-21a1a264f88b-small.jpg",
    "tags": [
     "중국",
     "S3상용",
@@ -85,26 +124,6 @@
    "source_published": null
   },
   {
-   "is_reg": true,
-   "flag": "🌏",
-   "region": "아세안",
-   "headline": "인도네시아, 10월 17일부터 화장품 할랄 인증 전면 의무화",
-   "url": "https://www.personalcareinsights.com/news/indonesia-halal-cosmetics-crackdown.html",
-   "date": "2026-10-17",
-   "source": "Personal Care Insights",
-   "img": "",
-   "tags": [
-    "아세안",
-    "S3상용",
-    "업계공인",
-    "지속가능"
-   ],
-   "body": "인도네시아에서 10월 17일부터 유통되는 모든 화장품에 할랄 인증이 전면 의무화됐다. 정부는 유예기간 연장이나 재고 소진 예외를 두지 않는다는 입장이며, 위반 시 경고·과징금과 함께 제품 유통 중단 조치가 내려진다.",
-   "insight": "그래서— 동남아 수출을 노리는 화장품 용기·완제품 업체는 처방뿐 아니라 포장·라벨까지 할랄 인증 범위에 포함되는지 다시 점검해야 한다.",
-   "event_date": "2026-10-17",
-   "source_published": "2026-10-17"
-  },
-  {
    "is_reg": false,
    "flag": "🇪🇺",
    "region": "유럽",
@@ -112,7 +131,7 @@
    "url": "https://www.glassonweb.com/news/sisecam-participate-braubeviale-fair-0",
    "date": "2026-10-16",
    "source": "Glass on Web",
-   "img": "",
+   "img": "http://www.glassonweb.com/sites/default/files/news/2026/Brau-Beviale-Fair.jpg",
    "tags": [
     "유럽",
     "S3상용",
@@ -121,7 +140,7 @@
    ],
    "body": "터키 시셰캄(Şişecam)이 10월 16일, 11월 뉘른베르크에서 열리는 '브라우베비알레' 참가 계획을 밝히며 경량 유리병 라인업을 예고했다. 기존 110g 초경량 미네랄워터 병에 이어 300g·400g대 경량 와인·음료병 대안을 포트폴리오에 추가했다고 설명했다.",
    "insight": "그래서— 유리 용기 업계가 '재활용 가능'을 넘어 '무게 자체를 줄이는' 경쟁으로 넘어가고 있다. 화장품 유리 용기의 경량화 요구도 이어질 전망이다.",
-   "source_published": "2026-10-16"
+   "source_published": null
   },
   {
    "is_reg": false,
@@ -131,7 +150,7 @@
    "url": "https://www.beautypackaging.com/?p=81235",
    "date": "2026-10-13",
    "source": "Beauty Packaging",
-   "img": "",
+   "img": "https://www.beautypackaging.com/wp-content/uploads/sites/8/2026/10/FlowerKnowsWinterCollection.jpg",
    "tags": [
     "글로벌",
     "S3상용",
@@ -150,7 +169,7 @@
    "url": "https://www.packagingeurope.com/nivea-creme-tin-now-made-from-95-recycled-aluminium/",
    "date": "2026-10-13",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/Novelis_Nivea_20240228_717850_MarcoProsch-73-.jpg",
    "tags": [
     "유럽",
     "S3상용",
@@ -169,7 +188,7 @@
    "url": "https://www.packagingeurope.com/collection-points-established-for-shellworks-plant-based-compostable-packs/",
    "date": "2026-10-13",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Vivomer.png",
    "tags": [
     "유럽",
     "S3상용",
@@ -188,7 +207,7 @@
    "url": "https://www.packagingeurope.com/recycled-polymer-procurement-platform-raises-eur5-1m-in-seed-funding/",
    "date": "2026-10-15",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Ambio.png",
    "tags": [
     "유럽",
     "S2프로토",
@@ -197,7 +216,7 @@
    ],
    "body": "핀란드 헬싱키 스타트업 암비오(Ambio)가 b2벤처(b2venture) 주도로 510만 유로(약 80억 원) 규모의 시드 투자를 유치했다고 10월 15일 보도됐다. 품질 편차가 크고 조달 과정이 파편화된 재생플라스틱 시장을 겨냥해, AI 기반으로 소싱부터 장기 공급까지 책임지는 조달 플랫폼을 운영하며 투자금은 폴리머 품목 확대와 국제 진출에 쓰인다.",
    "insight": "그래서— 재생원료 '구매'자체를 대신 책임져주는 중개 서비스가 투자를 받는다는 건, 재생원료 조달의 난도가 여전히 높다는 뜻이다.",
-   "source_published": "2026-10-15"
+   "source_published": "2026-10-16"
   },
   {
    "is_reg": false,
@@ -207,7 +226,7 @@
    "url": "https://www.packagingeurope.com/new-flexo-inks-target-food-safe-low-migration-labels-and-packaging/",
    "date": "2026-10-16",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/PE_Sun_Chemical.png",
    "tags": [
     "유럽",
     "S3상용",
@@ -219,25 +238,6 @@
    "source_published": "2026-10-16"
   },
   {
-   "is_reg": true,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "EU 집행위, PPWR 소상공인 생산자책임(EPR) 가이던스 발표",
-   "url": "https://www.packagingeurope.com/eu-commission-offers-epr-guidance-for-small-businesses-under-ppwr/",
-   "date": "2026-10-15",
-   "source": "Packaging Europe",
-   "img": "",
-   "tags": [
-    "유럽",
-    "S3상용",
-    "업계공인",
-    "지속가능"
-   ],
-   "body": "유럽연합 집행위원회가 연간 포장재 10톤 미만을 사용하는 소상공인에 적용되는 생산자책임재활용제도(EPR) 면제·완화 조치를 10월 15일 안내했다. 회원국과 생산자책임기구(PRO)에는 등록비 면제, 균일한 분담금 책정 등 과도한 부담을 피하라고 권고했으며, 각국별 대리인 선임 의무를 없애는 방안도 유럽의회·이사회에서 논의 중이다.",
-   "insight": "그래서— PPWR 집행 초기 혼란을 줄이려는 신호지만, 국가별 등록 의무 자체는 그대로여서 중소 브랜드의 실무 부담은 당장 크게 줄지 않을 전망이다.",
-   "source_published": "2026-10-15"
-  },
-  {
    "is_reg": false,
    "flag": "🇪🇺",
    "region": "유럽",
@@ -245,7 +245,7 @@
    "url": "https://www.packagingeurope.com/cazcabel-tequila-unveils-new-bottle-for-blanco-and-reposado/",
    "date": "2026-10-16",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/10/01_Cazcabel_Blanco-and-Reposado_New-Bottles_Landscape-1.jpg",
    "tags": [
     "유럽",
     "S3상용",

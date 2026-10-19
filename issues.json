@@ -53,5 +53,16 @@
     "regulation_current": 5,
     "regulation_future": 5,
     "masthead_title": "재활용 증명의 계절, 용기 수요는 맞물려 늘어난다"
+  },
+  {
+    "number": 7,
+    "date_range": "2026.10.13~10.19",
+    "newsletter_path": "newsletter-7.html",
+    "regulation_path": "regulation-7.html",
+    "newsletter_items": 13,
+    "photo_count": 13,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "할랄 마감일 넘어서자, 규제 시계는 2030년을 가리킨다"
   }
 ]

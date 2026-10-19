@@ -1,22 +1,22 @@
 {
  "number": 7,
- "ok": false,
- "final": true,
+ "ok": true,
+ "final": false,
  "live": null,
- "problems": [
-  "only 7 newsletter items survived verification (minimum 12)"
- ],
- "dropped": [
-  {
-   "headline": "소믹 패키징, PACK EXPO서 신규 기계 플랫폼 북미 데뷔",
-   "reason": "no verifiable photo"
-  },
-  {
-   "headline": "인디아 폴딩카톤·인디아코르 엑스포 뭄바이서 동시 개막",
-   "reason": "no verifiable photo"
-  }
- ],
- "items": 7,
- "photos": 7,
- "checked_at": "2026-10-19T04:23:01.499974+00:00"
+ "problems": [],
+ "dropped": [],
+ "items": 13,
+ "photos": 13,
+ "checked_at": "2026-10-19T04:25:42.425001+00:00",
+ "entry": {
+  "number": 7,
+  "date_range": "2026.10.13~10.19",
+  "newsletter_path": "newsletter-7.html",
+  "regulation_path": "regulation-7.html",
+  "newsletter_items": 13,
+  "photo_count": 13,
+  "regulation_current": 5,
+  "regulation_future": 5,
+  "masthead_title": "할랄 마감일 넘어서자, 규제 시계는 2030년을 가리킨다"
+ }
 }
