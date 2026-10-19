@@ -1,9 +1,11 @@
 {
  "number": 7,
- "ok": true,
- "final": false,
- "live": null,
- "problems": [],
+ "ok": false,
+ "final": true,
+ "live": false,
+ "problems": [
+  "page did not go live on GitHub Pages within 10 minutes"
+ ],
  "dropped": [],
  "items": 13,
  "photos": 13,
