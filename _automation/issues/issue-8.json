@@ -1,0 +1,196 @@
+{
+ "number": 8,
+ "date_range": "2026.10.20~10.26",
+ "masthead_title": "포장 업계 가을 성수기, 승부는 결국 규제",
+ "summary": "이번 주는 시카고에서 열린 팩 엑스포 인터내셔널 2026이 뉴스의 중심이었다 — 수계 배리어 코팅이 기술혁신상을 받았고, 재사용포장관이 역대 최대로 꾸려졌으며, 현장 참석자의 82%가 지속가능성을 실행 중이라는 설문이 나왔다. 동시에 유럽의회는 EPR '대리인' 의무 유예를 중소기업으로 좁힌 본회의 표결을 통과시켜, 포장재 기업들이 규제 셈법을 다시 짜야 하는 상황을 만들었다. 자카르타의 올팩 인도네시아와 청주의 오송 화장품뷰티엑스포는 동남아·한국 모두에서 포장이 곧 '수출 상담'의 언어가 되고 있음을 보여줬다.",
+ "reg_section_title": "EPR 대리인 의무, 중소기업만 비켜가나",
+ "newsletter_items": [
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "미쓰이케미칼, 수계 배리어 코팅으로 팩 엑스포 식음료 기술상",
+   "url": "https://www.plasticstoday.com/packaging/three-winners-named-in-pack-expo-technology-awards",
+   "date": "2026-10-21",
+   "source": "PlasticsToday",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "시카고 맥코믹 플레이스에서 열린 팩 엑스포 인터내셔널 2026에서, 참석자 투표로 선정하는 PMMI 기술혁신상(Technology Excellence Awards) 식음료 부문 수상작으로 미쓰이케미칼 아메리카의 수계 배리어 코팅 '타켈락 WPB 341'이 선정됐다. 이 상은 식음료, 종합 포장·가공, 지속가능성 등 3개 부문에서 9개 최종후보 중 참석자들의 온라인·앱 투표로 수상작을 뽑았다.",
+   "insight": "그래서— 알루미늄박을 대체할 코팅 기술이 '참석자 투표'라는 현장 검증을 통과하며 상용화 신호를 받았다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": true,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "EPR 규제와 중간선거가 가른 포장재 소재 전략",
+   "url": "https://www.packaginginsights.com/video/pack-expo-2026-lyondellbasell-packaging.html",
+   "date": "2026-10-21",
+   "source": "Packaging Insights",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "라이온델바젤의 산업마케팅 매니저 알 피주티는 팩 엑스포 인터내셔널 2026 현장 인터뷰에서, 각 주의 생산자책임재활용제도(EPR)와 미국 중간선거 결과가 올해 포장재 기업들의 소재 선택과 투자 우선순위를 좌우하는 핵심 변수라고 밝혔다. 그는 규제 불확실성이 커질수록 기업들이 재활용 가능성이 검증된 소재로 보수적으로 움직이는 경향이 있다고 설명했다.",
+   "insight": "그래서— 포장재 R&D 투자의 1순위 변수가 '소비자 트렌드'가 아니라 '주별 EPR 입법 시계'로 바뀌고 있다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "팩 엑스포 '재사용 포장관', 75개사 모여 리필 인프라 전시",
+   "url": "https://reusables.org/pack-expo-international-mccormick-place-2026/",
+   "date": "2026-10-20",
+   "source": "Reusable Packaging Association",
+   "img": "",
+   "tags": [
+    "미국",
+    "S2프로토",
+    "지속가능",
+    "발상혁신"
+   ],
+   "body": "팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 재사용포장협회(RPA)가 75개 이상 기업이 참여하는 '재사용 포장관(Reusable Packaging Pavilion)'을 역대 최대 규모로 꾸렸다. 올해 신설된 '넥스트젠 리유즈 코리더'는 업스트림이 주관해 외식·음료·이커머스·소비재 분야의 1차·소비자 포장용 재사용·리필 솔루션에 초점을 맞췄다.",
+   "insight": "그래서— '재사용 포장'이 이제 개별 부스 한 켠이 아니라 전시장 하나를 통째로 채우는 독립 카테고리가 됐다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🌐",
+   "region": "글로벌",
+   "headline": "완제품 기업 82%가 지속가능 포장 추진 중, 팩 엑스포 설문",
+   "url": "https://www.processingmagazine.com/news-notes/news/55396266/pack-expo-international-2026-showcases-sustainability-technologies-for-manufacturers",
+   "date": "2026-10-20",
+   "source": "Processing Magazine",
+   "img": "",
+   "tags": [
+    "글로벌",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "포장·가공 장비협회 PMMI가 팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 발표한 설문에 따르면, 완제품 기업의 82%가 지속가능성 관련 활동에 적극 참여하고 있으며, 설비 제조사(OEM)의 64%는 지속가능성이 설비 설계 결정에 직접 영향을 준다고 답했다. 행사장에는 재활용성·순환경제 전략에 특화된 '지속가능성 센트럴' 구역이 별도로 마련됐다.",
+   "insight": "그래서— 지속가능 포장은 더 이상 마케팅 문구가 아니라 설비 투자 의사결정표의 한 줄이 됐다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": true,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "EPR '대리인' 의무 유예, 중소기업으로 범위 축소 의결",
+   "url": "https://www.lovguiden.dk/en/det-offentlige/europa-parlamentet/2026-10-20-ep-vil-kun-fritage-smaa-eu-virksomheder-for-repraesentant-i-affaldsregler",
+   "date": "2026-10-20",
+   "source": "Lovguiden",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "유럽의회가 본회의에서 포장재·배터리 생산자책임재활용제도(EPR)의 '대리인(authorised representative)' 의무를 일시 유예하는 방안을 찬성 616표로 의결했다. 집행위가 제안한 전체 유예안과 달리, 의회는 종업원 50인 미만·연 매출 1,000만 유로 미만의 EU 역내 소기업으로 대상을 좁혔으며, 역외 기업에는 대리인 의무가 그대로 유지된다. 이 입장은 각료이사회와의 협상을 거쳐야 확정된다.",
+   "insight": "그래서— EPR 간소화 혜택이 역내 소기업에만 좁혀지면서, 역외에서 EU로 수출하는 화장품 용기 공급사는 대리인 비용 부담을 계속 져야 한다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🌏",
+   "region": "아세안",
+   "headline": "올팩 인도네시아 2026 자카르타 개막, 화장품·포장기계 공급망 결집",
+   "url": "https://amec.es/en/?p=56071",
+   "date": "2026-10-20",
+   "source": "AMEC",
+   "img": "",
+   "tags": [
+    "아세안",
+    "S3상용",
+    "업계공인",
+    "경쟁 추격"
+   ],
+   "body": "인도네시아 자카르타국제전시장(JIExpo)에서 10월20일부터 23일까지 올팩 인도네시아 2026이 열린다. 식품·음료·제약·화장품 전 분야의 가공·포장·충전·자동화·라벨링 기술을 아우르며, 주최 측은 50개국에서 1,500개 이상 업체가 참가한다고 밝혔다.",
+   "insight": "그래서— 동남아 최대 포장전시회가 화장품 공급망까지 넓히며, 인도네시아가 지역 포장 허브로 자리잡고 있다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇰🇷",
+   "region": "한국",
+   "headline": "오송 화장품뷰티엑스포, 226개사 참가해 2,600억원 수출상담",
+   "url": "https://nocutnews.co.kr/news/6565114",
+   "date": "2026-10-22",
+   "source": "노컷뉴스",
+   "img": "",
+   "tags": [
+    "한국",
+    "S3상용",
+    "업계공인",
+    "발상혁신"
+   ],
+   "body": "충청북도와 청주시가 주최하고 오송바이오진흥재단이 주관하는 '2026 오송 화장품뷰티엑스포'가 10월22일부터 24일까지 청주 오스코에서 열린다. 226개 기업이 참가를 신청했고 국내외 바이어 500여명이 참여해 2,600억원 규모의 수출 상담을 진행할 예정이며, 창업 7년 이내 기업 10곳을 선발해 투자설명회와 유통 연계를 지원하는 초기기업 성장 프로그램이 처음 운영된다.",
+   "insight": "그래서— 지방정부가 주도하는 화장품 엑스포도 이제 '전시'가 아니라 '수출 상담·투자 연결'을 숫자로 증명하는 자리로 바뀌고 있다.",
+   "event_date": "2026-10-22"
+  }
+ ],
+ "regulation_current": [
+  {
+   "url": "https://environment.ec.europa.eu/news/new-eu-rules-packaging-enter-application-2026-08-11_en",
+   "title": "EU PPWR 핵심 의무, 중금속·PFAS 제한 시행 중",
+   "body": "지난 8월12일부터 EU 포장·포장폐기물규정(PPWR)의 1차 의무가 발효돼, 포장재 내 납·카드뮴·수은·6가크롬의 총 함유량을 품목당 100mg/kg 이하로 제한하는 규정과 식품접촉 포장의 과불화화합물(PFAS) 사용 제한이 계속 적용되고 있다. 중소기업 대상 EPR '대리인' 의무 유예 여부는 10월 유럽의회 표결을 거쳐 각료이사회 협상 단계로 넘어갔다."
+  },
+  {
+   "url": "https://ppwrconnect.com/blog/ppwr-uk-packaging-epr-year-two-data-deadline-ram-2027",
+   "title": "영국 pEPR, 2027년도 등록·상반기 데이터 제출 마감",
+   "body": "영국의 포장재 생산자책임재활용제도(pEPR)에 따라 대형 생산자는 10월1일까지 2026년 1~6월 포장 데이터를 보고하고 2027년도 등록 신청과 등록비 납부를 마쳐야 했다. 이번 보고 주기에는 자체관리조직(SMO) 폐기물 데이터 제출 의무도 처음 적용됐다."
+  },
+  {
+   "url": "https://www.hklaw.com/en/insights/publications/2026/01/the-latest-pandoras-box-what-you-need-to-know-now-about-state-epr-laws",
+   "title": "미국 7개 주, 포장재 EPR 운영 단계 진입",
+   "body": "미국에서는 메인·오리건·콜로라도·캘리포니아·미네소타·메릴랜드·워싱턴 등 7개 주가 포장재 생산자책임재활용제도(EPR)를 운영하고 있다. 오리건·콜로라도는 2025년 공급량 보고를 5월31일까지 마쳤고, 콜로라도는 올해 1월부터 첫 분담금 고지서가 발송됐다."
+  },
+  {
+   "url": "https://www.downtoearth.org.in/waste/epr-in-asia-pacific-philippines-built-a-tough-plastic-penalty-but-its-polluters-set-the-footprint",
+   "title": "필리핀 EPR, 재활용 60% 목표 앞두고 미준수 의심기업 155곳에 서한",
+   "body": "필리핀 확대생산자책임법(RA 11898)은 대형 생산자에 2026년 말까지 플라스틱 포장재 회수율 60% 달성을 요구한다. 환경부는 지난 8월 미준수 의심 기업 155곳에 추가로 소명요청서를 보내 단속을 강화했으며, 당국은 이 서한이 위반 확정을 의미하지는 않는다고 밝혔다."
+  },
+  {
+   "url": "https://www.sgs.com/en/news/2026/10/safeguards-13226-thailand-proposes-revisions-to-food-contact-plastic-packaging-rules",
+   "title": "태국 식약청, 식품접촉 플라스틱 포장재 PFAS 기준 신설 추진",
+   "body": "태국 식품의약품안전청(TFDA)이 2022년 식품접촉 플라스틱 포장 고시 개정을 추진하며, EU PPWR 가이드를 참고한 PFAS 허용기준과 비스페놀류·프탈레이트류 이행기준을 새로 포함하는 초안을 마련했다. 개정안은 플라스틱 7개 종류를 식품접촉 허용 목록에 추가하는 내용도 담고 있다."
+  }
+ ],
+ "regulation_future": [
+  {
+   "title": "PPWR 재사용 라벨 QR코드, 2029년 2월 의무화",
+   "url": "https://www.coolset.com/academy/ppwr-what-companies-must-have-in-place-from-august-12-2026",
+   "body": "PPWR에 따라 재사용 포장에는 2029년 2월12일부터 QR코드 등 디지털 정보가 담긴 재사용 라벨 표시가 의무화된다. 회수·재사용 이력을 디지털로 관리할 수 있도록 제품 데이터 체계를 갖추는 것이 선행 과제로 꼽힌다."
+  },
+  {
+   "title": "PPWR 퇴비화 의무, 2028년 2월부터 티백·커피패드 적용",
+   "url": "https://ppwratlas.com/articles/article-9/",
+   "body": "PPWR 제9조에 따라 2028년 2월12일부터 1회용 차·커피 포장과 과일·채소용 스티커 라벨은 재활용이 아닌 퇴비화 가능 소재로 만들어야 한다. 산업용 퇴비화 조건 충족이 기본이며, 회원국에 따라 가정용 퇴비화 조건이 추가로 요구될 수 있다."
+  },
+  {
+   "title": "PPWR 재질구성 통일 라벨, 2028년 8월 표시 의무화",
+   "url": "https://www.coolset.com/academy/ppwr-what-companies-must-have-in-place-from-august-12-2026",
+   "body": "2028년 8월12일부터 EU 전역의 포장재에 재질 구성과 분리배출 방법을 알리는 통일 픽토그램 라벨 표시가 의무화된다. 회원국별로 제각각이던 분리배출 표시 체계가 단일 규격으로 통합되는 것이 핵심이다."
+  },
+  {
+   "title": "프랑스 AGEC법, 2040년까지 일회용 플라스틱 포장 전면 금지 목표",
+   "url": "https://netzerocompare.com/policies/france-anti-waste-for-a-circular-economy-law-agec",
+   "body": "프랑스 순환경제 반낭비법(AGEC)은 2040년까지 일회용 플라스틱 포장을 전면 종료한다는 장기 목표를 두고, 5년 단위로 감축·재사용·재활용 목표를 단계적으로 강화하고 있다. 최근에는 EU 규정과 보조를 맞추는 개정 과정에서 일부 완화 시도를 둘러싸고 환경단체와 업계 간 논쟁이 벌어지고 있다."
+  },
+  {
+   "title": "한국, 맞춤형화장품 조제관리사 규제 완화 2027년 7월 시행 예정",
+   "url": "https://www.mfds.go.kr/brd/m_209/view.do?seq=44269",
+   "body": "식품의약품안전처가 입법예고한 화장품법 시행령·시행규칙 개정안에 따라, 샴푸·린스·바디클렌저·액체비누 4개 품목을 단순 소분 판매할 때는 맞춤형화장품 조제관리사 대신 위생교육을 이수한 종업원이 업무를 맡을 수 있게 된다. 개정안은 2027년 7월24일 시행을 목표로 하며, 소비자 맞춤 혼합·즉석 조제 서비스는 기존처럼 조제관리사가 전담한다."
+  }
+ ]
+}
