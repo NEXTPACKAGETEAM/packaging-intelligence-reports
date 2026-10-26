@@ -4,15 +4,19 @@
  "final": true,
  "live": null,
  "problems": [
-  "only 6 newsletter items survived verification (minimum 12)"
+  "only 10 newsletter items survived verification (minimum 12)"
  ],
  "dropped": [
   {
-   "headline": "EPR '대리인' 의무 유예, 중소기업으로 범위 축소 의결",
+   "headline": "RND 오토메이션, 파우칭 로봇 시연으로 자동화 수요 공략",
+   "reason": "no verifiable photo"
+  },
+  {
+   "headline": "요바트, 플라스틱·유리·금속 용기 라벨링용 접착제 라인업 전시",
    "reason": "no verifiable photo"
   }
  ],
- "items": 6,
- "photos": 6,
- "checked_at": "2026-10-26T04:26:09.796989+00:00"
+ "items": 10,
+ "photos": 10,
+ "checked_at": "2026-10-26T04:31:49.671916+00:00"
 }
