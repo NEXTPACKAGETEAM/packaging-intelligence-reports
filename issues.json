@@ -64,5 +64,16 @@
     "regulation_current": 5,
     "regulation_future": 5,
     "masthead_title": "할랄 마감일 넘어서자, 규제 시계는 2030년을 가리킨다"
+  },
+  {
+    "number": 8,
+    "date_range": "2026.10.20~10.26",
+    "newsletter_path": "newsletter-8.html",
+    "regulation_path": "regulation-8.html",
+    "newsletter_items": 10,
+    "photo_count": 10,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "포장 업계 가을 성수기, 승부는 결국 규제"
   }
 ]

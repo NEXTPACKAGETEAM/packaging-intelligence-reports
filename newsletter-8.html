@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 8호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">포장 업계 가을 성수기, 승부는 결국 규제</h1>
+    <div class="meta-bar">
+      <span class="accent">8호</span><span class="meta-sep">·</span>
+      2026.10.20 &ndash; 10.26<span class="meta-sep">·</span>
+      신선 <b>10</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">2</span><span class="meta-sep">·</span>
+      사진 10
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주는 시카고에서 열린 팩 엑스포 인터내셔널 2026이 뉴스의 중심이었다 — 수계 배리어 코팅이 기술혁신상을 받았고, 재사용포장관이 역대 최대로 꾸려졌으며, 현장 참석자의 82%가 지속가능성을 실행 중이라는 설문이 나왔다. 동시에 유럽의회는 EPR &#x27;대리인&#x27; 의무 유예를 중소기업으로 좁힌 본회의 표결을 통과시켜, 포장재 기업들이 규제 셈법을 다시 짜야 하는 상황을 만들었다. 자카르타의 올팩 인도네시아와 청주의 오송 화장품뷰티엑스포는 동남아·한국 모두에서 포장이 곧 &#x27;수출 상담&#x27;의 언어가 되고 있음을 보여줬다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">EPR 대리인 의무, 중소기업만 비켜가나</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://resource-cns.cnsmedia.com/fif/videoimg/4e607f14-0d34-476a-a357-783ac25e63d1videoimages.webp" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/video/pack-expo-2026-lyondellbasell-packaging.html" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — EPR 규제와 중간선거가 가른 포장재 소재 전략</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-21</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/video/pack-expo-2026-lyondellbasell-packaging.html" target="_blank" rel="noopener"><p class="item-desc">라이온델바젤의 산업마케팅 매니저 알 피주티는 팩 엑스포 인터내셔널 2026 현장 인터뷰에서, 각 주의 생산자책임재활용제도(EPR)와 미국 중간선거 결과가 올해 포장재 기업들의 소재 선택과 투자 우선순위를 좌우하는 핵심 변수라고 밝혔다. 그는 규제 불확실성이 커질수록 기업들이 재활용 가능성이 검증된 소재로 보수적으로 움직이는 경향이 있다고 설명했다.</p></a>
+<div class="item-insight">그래서— 포장재 R&amp;D 투자의 1순위 변수가 &#x27;소비자 트렌드&#x27;가 아니라 &#x27;주별 EPR 입법 시계&#x27;로 바뀌고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://static.ghost.org/v5.0.0/images/publication-cover.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/eu-parliament-votes-to-exempt-smes-from-representative-rules-until-2035/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — EPR &#x27;대리인&#x27; 의무 유예, 중소기업으로 범위 축소 의결</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-21</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/eu-parliament-votes-to-exempt-smes-from-representative-rules-until-2035/" target="_blank" rel="noopener"><p class="item-desc">유럽의회가 10월20일 본회의에서 포장재·배터리 생산자책임재활용제도(EPR)의 &#x27;대리인(authorised representative)&#x27; 의무를 일시 유예하는 방안을 찬성 616표, 반대 9표, 기권 39표로 의결했다. 집행위가 제안한 전체 유예안과 달리, 의회는 종업원 50인 미만·연 매출 1,000만 유로 미만의 EU 역내 소기업으로 대상을 좁혔으며, 역외 기업에는 대리인 의무가 그대로 유지된다. 이 입장은 2035년까지(또는 순환경제법 발효 전까지) 적용되며 각료이사회와의 3자협상을 거쳐야 확정된다.</p></a>
+<div class="item-insight">그래서— EPR 간소화 혜택이 역내 소기업에만 좁혀지면서, 역외에서 EU로 수출하는 화장품 용기 공급사는 대리인 비용 부담을 계속 져야 한다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/blt8200d34ac8bf9af2/6ad8d834b8f9c95f3e15e4e9/McCormick.jpg?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.plasticstoday.com/packaging/three-winners-named-in-pack-expo-technology-awards" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 미쓰이케미칼, 수계 배리어 코팅으로 팩 엑스포 식음료 기술상</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-21</span><span class="meta-sep"> · </span>PlasticsToday</div>
+<a class="item-desc-link" href="https://www.plasticstoday.com/packaging/three-winners-named-in-pack-expo-technology-awards" target="_blank" rel="noopener"><p class="item-desc">시카고 맥코믹 플레이스에서 열린 팩 엑스포 인터내셔널 2026에서, 참석자 투표로 선정하는 PMMI 기술혁신상(Technology Excellence Awards) 식음료 부문 수상작으로 미쓰이케미칼 아메리카의 수계 배리어 코팅 &#x27;타켈락 WPB 341&#x27;이 선정됐다. 이 상은 식음료, 종합 포장·가공, 지속가능성 등 3개 부문에서 9개 최종후보 중 참석자들의 온라인·앱 투표로 수상작을 뽑았다.</p></a>
+<div class="item-insight">그래서— 알루미늄박을 대체할 코팅 기술이 &#x27;참석자 투표&#x27;라는 현장 검증을 통과하며 상용화 신호를 받았다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://reusables.org/wp-content/uploads/2024/08/reusable-packaging-association-white-1-1.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-blue">지속가능</span><span class="tag tag-blue">발상혁신</span></div>
+<a class="item-headline-link" href="https://reusables.org/pack-expo-international-mccormick-place-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 팩 엑스포 &#x27;재사용 포장관&#x27;, 75개사 모여 리필 인프라 전시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-20</span><span class="meta-sep"> · </span>Reusable Packaging Association</div>
+<a class="item-desc-link" href="https://reusables.org/pack-expo-international-mccormick-place-2026/" target="_blank" rel="noopener"><p class="item-desc">팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 재사용포장협회(RPA)가 75개 이상 기업이 참여하는 &#x27;재사용 포장관(Reusable Packaging Pavilion)&#x27;을 역대 최대 규모로 꾸렸다. 올해 신설된 &#x27;넥스트젠 리유즈 코리더&#x27;는 업스트림이 주관해 외식·음료·이커머스·소비재 분야의 1차·소비자 포장용 재사용·리필 솔루션에 초점을 맞췄다.</p></a>
+<div class="item-insight">그래서— &#x27;재사용 포장&#x27;이 이제 개별 부스 한 켠이 아니라 전시장 하나를 통째로 채우는 독립 카테고리가 됐다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://img.processingmagazine.com/files/base/ebm/pcm/image/2026/08/6a74bebe00706bfb4676e2f5-pack_expo_release.png?auto=format,compress&amp;fit=fill&amp;fill=blur&amp;w=1200&amp;h=630" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.processingmagazine.com/news-notes/news/55396266/pack-expo-international-2026-showcases-sustainability-technologies-for-manufacturers" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — 완제품 기업 82%가 지속가능 포장 추진 중, 팩 엑스포 설문</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-20</span><span class="meta-sep"> · </span>Processing Magazine</div>
+<a class="item-desc-link" href="https://www.processingmagazine.com/news-notes/news/55396266/pack-expo-international-2026-showcases-sustainability-technologies-for-manufacturers" target="_blank" rel="noopener"><p class="item-desc">포장·가공 장비협회 PMMI가 팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 발표한 설문에 따르면, 완제품 기업의 82%가 지속가능성 관련 활동에 적극 참여하고 있으며, 설비 제조사(OEM)의 64%는 지속가능성이 설비 설계 결정에 직접 영향을 준다고 답했다. 행사장에는 재활용성·순환경제 전략에 특화된 &#x27;지속가능성 센트럴&#x27; 구역이 별도로 마련됐다.</p></a>
+<div class="item-insight">그래서— 지속가능 포장은 더 이상 마케팅 문구가 아니라 설비 투자 의사결정표의 한 줄이 됐다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://amec.es/wp-content/uploads/2025/05/segellmemberof.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">아세안</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://amec.es/en/?p=56071" target="_blank" rel="noopener"><h3 class="item-headline">🌏 아세안 — 올팩 인도네시아 2026 자카르타 개막, 화장품·포장기계 공급망 결집</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-20</span><span class="meta-sep"> · </span>AMEC</div>
+<a class="item-desc-link" href="https://amec.es/en/?p=56071" target="_blank" rel="noopener"><p class="item-desc">인도네시아 자카르타국제전시장(JIExpo)에서 10월20일부터 23일까지 올팩 인도네시아 2026이 열린다. 식품·음료·제약·화장품 전 분야의 가공·포장·충전·자동화·라벨링 기술을 아우르며, 주최 측은 50개국에서 1,500개 이상 업체가 참가한다고 밝혔다.</p></a>
+<div class="item-insight">그래서— 동남아 최대 포장전시회가 화장품 공급망까지 넓히며, 인도네시아가 지역 포장 허브로 자리잡고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://file2.nocutnews.co.kr/newsroom/image/2026/08/19/202608191928580041_0.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">한국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">발상혁신</span></div>
+<a class="item-headline-link" href="https://nocutnews.co.kr/news/6565114" target="_blank" rel="noopener"><h3 class="item-headline">🇰🇷 한국 — 오송 화장품뷰티엑스포, 226개사 참가해 2,600억원 수출상담</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-22</span><span class="meta-sep"> · </span>노컷뉴스</div>
+<a class="item-desc-link" href="https://nocutnews.co.kr/news/6565114" target="_blank" rel="noopener"><p class="item-desc">충청북도와 청주시가 주최하고 오송바이오진흥재단이 주관하는 &#x27;2026 오송 화장품뷰티엑스포&#x27;가 10월22일부터 24일까지 청주 오스코에서 열린다. 226개 기업이 참가를 신청했고 국내외 바이어 500여명이 참여해 2,600억원 규모의 수출 상담을 진행할 예정이며, 창업 7년 이내 기업 10곳을 선발해 투자설명회와 유통 연계를 지원하는 초기기업 성장 프로그램이 처음 운영된다.</p></a>
+<div class="item-insight">그래서— 지방정부가 주도하는 화장품 엑스포도 이제 &#x27;전시&#x27;가 아니라 &#x27;수출 상담·투자 연결&#x27;을 숫자로 증명하는 자리로 바뀌고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://eu-images.contentstack.com/v3/assets/blta023acee29658dfc/bltafdc1ad783710edf/6ad6f3edb2dc8cc8764a9d9f/fresh-lock-pcr-closures-and-emerging-paper-pouches.jpg?disable=upscale&amp;width=1200&amp;height=630&amp;fit=crop" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingdigest.com/flexible-packaging/resealable-zipper-closures-advance-with-pcr-paper-pouch-formats" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 프레시락, PCR 25% 지퍼와 종이 호환 클로저로 EPR 대응</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-20</span><span class="meta-sep"> · </span>Packaging Digest</div>
+<a class="item-desc-link" href="https://www.packagingdigest.com/flexible-packaging/resealable-zipper-closures-advance-with-pcr-paper-pouch-formats" target="_blank" rel="noopener"><p class="item-desc">프레시락이 팩 엑스포 인터내셔널 2026(부스 S-3907)에서 기계적 재활용 PCR을 25% 함유한 재밀봉 지퍼 클로저와, 종이 파우치에 적용 가능한 신규 압착형(press-to-close) 지퍼를 공개했다. 회사는 각 주의 EPR 규제가 강화되면서 브랜드들이 포장 전체를 규정 준수 소재로 전환해야 하는 압박이 커지고 있다고 설명했다.</p></a>
+<div class="item-insight">그래서— 지퍼 클로저 하나까지도 &#x27;EPR 준수 가능 여부&#x27;가 구매 기준에 들어가는 시대가 됐다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://www.ahlstrom.com/link/cd3a5a8ab4814b6ba5bd80c31e78ebe2.aspx" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.ahlstrom.com/campaigns/packexpo-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 알스트롬, 재활용 가능한 경량 열접착 바리어 종이 공개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-20</span><span class="meta-sep"> · </span>Ahlstrom</div>
+<a class="item-desc-link" href="https://www.ahlstrom.com/campaigns/packexpo-2026/" target="_blank" rel="noopener"><p class="item-desc">알스트롬이 팩 엑스포 인터내셔널 2026(부스 W-45020)에서 기존 포장재를 종이 기반 소재로 대체할 수 있는 신규 바리어 종이 기술을 선보였다. 수분·습기·그리스 저항성을 갖추면서도 재활용이 가능하고 열접착이 가능한 경량 FSC 인증 종이로, 식품·소비재 포장용으로 선보였다.</p></a>
+<div class="item-insight">그래서— &#x27;종이로 바꾸면 방수·방습 성능을 포기해야 한다&#x27;는 통념이 소재 단에서부터 깨지고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://kanekagreenplanet.com/wp-content/uploads/2023/07/sq-pack-1.webp" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">미국</span><span class="tag tag-neutral">S2프로토</span><span class="tag tag-blue">지속가능</span><span class="tag tag-blue">발상혁신</span></div>
+<a class="item-headline-link" href="https://kanekagreenplanet.com/event/pack-expo-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇺🇸 미국 — 카네카, 생분해 바이오폴리머 PHBH 북미 포장시장에 소개</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-20</span><span class="meta-sep"> · </span>Kaneka Green Planet</div>
+<a class="item-desc-link" href="https://kanekagreenplanet.com/event/pack-expo-2026/" target="_blank" rel="noopener"><p class="item-desc">일본 카네카의 그린플래닛 사업부가 팩 엑스포 인터내셔널 2026 &#x27;용기·소재관&#x27;(부스 SL-19009)에서 생분해성 바이오폴리머 PHBH를 포장·필름·파우치·병·식기류용으로 소개했다. 가정용·산업용 퇴비화와 해양 생분해성을 모두 인증받았으며 미세플라스틱을 남기지 않는다고 회사 측은 밝혔다.</p></a>
+<div class="item-insight">그래서— &#x27;해양 생분해&#x27;까지 인증된 소재가 등장하면서, 생분해 플라스틱의 적용 범위가 식기·일회용품을 넘어 포장재로 확장되고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>

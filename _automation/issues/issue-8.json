@@ -6,25 +6,6 @@
  "reg_section_title": "EPR 대리인 의무, 중소기업만 비켜가나",
  "newsletter_items": [
   {
-   "is_reg": false,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "미쓰이케미칼, 수계 배리어 코팅으로 팩 엑스포 식음료 기술상",
-   "url": "https://www.plasticstoday.com/packaging/three-winners-named-in-pack-expo-technology-awards",
-   "date": "2026-10-21",
-   "source": "PlasticsToday",
-   "img": "",
-   "tags": [
-    "미국",
-    "S3상용",
-    "기술혁신",
-    "업계공인"
-   ],
-   "body": "시카고 맥코믹 플레이스에서 열린 팩 엑스포 인터내셔널 2026에서, 참석자 투표로 선정하는 PMMI 기술혁신상(Technology Excellence Awards) 식음료 부문 수상작으로 미쓰이케미칼 아메리카의 수계 배리어 코팅 '타켈락 WPB 341'이 선정됐다. 이 상은 식음료, 종합 포장·가공, 지속가능성 등 3개 부문에서 9개 최종후보 중 참석자들의 온라인·앱 투표로 수상작을 뽑았다.",
-   "insight": "그래서— 알루미늄박을 대체할 코팅 기술이 '참석자 투표'라는 현장 검증을 통과하며 상용화 신호를 받았다.",
-   "event_date": "2026-10-20"
-  },
-  {
    "is_reg": true,
    "flag": "🇺🇸",
    "region": "미국",
@@ -32,7 +13,7 @@
    "url": "https://www.packaginginsights.com/video/pack-expo-2026-lyondellbasell-packaging.html",
    "date": "2026-10-21",
    "source": "Packaging Insights",
-   "img": "",
+   "img": "https://resource-cns.cnsmedia.com/fif/videoimg/4e607f14-0d34-476a-a357-783ac25e63d1videoimages.webp",
    "tags": [
     "미국",
     "S3상용",
@@ -41,45 +22,8 @@
    ],
    "body": "라이온델바젤의 산업마케팅 매니저 알 피주티는 팩 엑스포 인터내셔널 2026 현장 인터뷰에서, 각 주의 생산자책임재활용제도(EPR)와 미국 중간선거 결과가 올해 포장재 기업들의 소재 선택과 투자 우선순위를 좌우하는 핵심 변수라고 밝혔다. 그는 규제 불확실성이 커질수록 기업들이 재활용 가능성이 검증된 소재로 보수적으로 움직이는 경향이 있다고 설명했다.",
    "insight": "그래서— 포장재 R&D 투자의 1순위 변수가 '소비자 트렌드'가 아니라 '주별 EPR 입법 시계'로 바뀌고 있다.",
-   "event_date": "2026-10-20"
-  },
-  {
-   "is_reg": false,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "팩 엑스포 '재사용 포장관', 75개사 모여 리필 인프라 전시",
-   "url": "https://reusables.org/pack-expo-international-mccormick-place-2026/",
-   "date": "2026-10-20",
-   "source": "Reusable Packaging Association",
-   "img": "",
-   "tags": [
-    "미국",
-    "S2프로토",
-    "지속가능",
-    "발상혁신"
-   ],
-   "body": "팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 재사용포장협회(RPA)가 75개 이상 기업이 참여하는 '재사용 포장관(Reusable Packaging Pavilion)'을 역대 최대 규모로 꾸렸다. 올해 신설된 '넥스트젠 리유즈 코리더'는 업스트림이 주관해 외식·음료·이커머스·소비재 분야의 1차·소비자 포장용 재사용·리필 솔루션에 초점을 맞췄다.",
-   "insight": "그래서— '재사용 포장'이 이제 개별 부스 한 켠이 아니라 전시장 하나를 통째로 채우는 독립 카테고리가 됐다.",
-   "event_date": "2026-10-20"
-  },
-  {
-   "is_reg": false,
-   "flag": "🌐",
-   "region": "글로벌",
-   "headline": "완제품 기업 82%가 지속가능 포장 추진 중, 팩 엑스포 설문",
-   "url": "https://www.processingmagazine.com/news-notes/news/55396266/pack-expo-international-2026-showcases-sustainability-technologies-for-manufacturers",
-   "date": "2026-10-20",
-   "source": "Processing Magazine",
-   "img": "",
-   "tags": [
-    "글로벌",
-    "S3상용",
-    "지속가능",
-    "업계공인"
-   ],
-   "body": "포장·가공 장비협회 PMMI가 팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 발표한 설문에 따르면, 완제품 기업의 82%가 지속가능성 관련 활동에 적극 참여하고 있으며, 설비 제조사(OEM)의 64%는 지속가능성이 설비 설계 결정에 직접 영향을 준다고 답했다. 행사장에는 재활용성·순환경제 전략에 특화된 '지속가능성 센트럴' 구역이 별도로 마련됐다.",
-   "insight": "그래서— 지속가능 포장은 더 이상 마케팅 문구가 아니라 설비 투자 의사결정표의 한 줄이 됐다.",
-   "event_date": "2026-10-20"
+   "event_date": "2026-10-20",
+   "source_published": null
   },
   {
    "is_reg": true,
@@ -89,7 +33,7 @@
    "url": "https://www.packagingeurope.com/eu-parliament-votes-to-exempt-smes-from-representative-rules-until-2035/",
    "date": "2026-10-21",
    "source": "Packaging Europe",
-   "img": "",
+   "img": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
    "tags": [
     "유럽",
     "S3상용",
@@ -98,7 +42,68 @@
    ],
    "body": "유럽의회가 10월20일 본회의에서 포장재·배터리 생산자책임재활용제도(EPR)의 '대리인(authorised representative)' 의무를 일시 유예하는 방안을 찬성 616표, 반대 9표, 기권 39표로 의결했다. 집행위가 제안한 전체 유예안과 달리, 의회는 종업원 50인 미만·연 매출 1,000만 유로 미만의 EU 역내 소기업으로 대상을 좁혔으며, 역외 기업에는 대리인 의무가 그대로 유지된다. 이 입장은 2035년까지(또는 순환경제법 발효 전까지) 적용되며 각료이사회와의 3자협상을 거쳐야 확정된다.",
    "insight": "그래서— EPR 간소화 혜택이 역내 소기업에만 좁혀지면서, 역외에서 EU로 수출하는 화장품 용기 공급사는 대리인 비용 부담을 계속 져야 한다.",
-   "event_date": "2026-10-20"
+   "event_date": "2026-10-20",
+   "source_published": null
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "미쓰이케미칼, 수계 배리어 코팅으로 팩 엑스포 식음료 기술상",
+   "url": "https://www.plasticstoday.com/packaging/three-winners-named-in-pack-expo-technology-awards",
+   "date": "2026-10-21",
+   "source": "PlasticsToday",
+   "img": "https://eu-images.contentstack.com/v3/assets/blt08823f5db61ded5d/blt8200d34ac8bf9af2/6ad8d834b8f9c95f3e15e4e9/McCormick.jpg?disable=upscale&width=1200&height=630&fit=crop",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "시카고 맥코믹 플레이스에서 열린 팩 엑스포 인터내셔널 2026에서, 참석자 투표로 선정하는 PMMI 기술혁신상(Technology Excellence Awards) 식음료 부문 수상작으로 미쓰이케미칼 아메리카의 수계 배리어 코팅 '타켈락 WPB 341'이 선정됐다. 이 상은 식음료, 종합 포장·가공, 지속가능성 등 3개 부문에서 9개 최종후보 중 참석자들의 온라인·앱 투표로 수상작을 뽑았다.",
+   "insight": "그래서— 알루미늄박을 대체할 코팅 기술이 '참석자 투표'라는 현장 검증을 통과하며 상용화 신호를 받았다.",
+   "event_date": "2026-10-20",
+   "source_published": "2026-10-21"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "팩 엑스포 '재사용 포장관', 75개사 모여 리필 인프라 전시",
+   "url": "https://reusables.org/pack-expo-international-mccormick-place-2026/",
+   "date": "2026-10-20",
+   "source": "Reusable Packaging Association",
+   "img": "https://reusables.org/wp-content/uploads/2024/08/reusable-packaging-association-white-1-1.png",
+   "tags": [
+    "미국",
+    "S2프로토",
+    "지속가능",
+    "발상혁신"
+   ],
+   "body": "팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 재사용포장협회(RPA)가 75개 이상 기업이 참여하는 '재사용 포장관(Reusable Packaging Pavilion)'을 역대 최대 규모로 꾸렸다. 올해 신설된 '넥스트젠 리유즈 코리더'는 업스트림이 주관해 외식·음료·이커머스·소비재 분야의 1차·소비자 포장용 재사용·리필 솔루션에 초점을 맞췄다.",
+   "insight": "그래서— '재사용 포장'이 이제 개별 부스 한 켠이 아니라 전시장 하나를 통째로 채우는 독립 카테고리가 됐다.",
+   "event_date": "2026-10-20",
+   "source_published": "2026-03-30"
+  },
+  {
+   "is_reg": false,
+   "flag": "🌐",
+   "region": "글로벌",
+   "headline": "완제품 기업 82%가 지속가능 포장 추진 중, 팩 엑스포 설문",
+   "url": "https://www.processingmagazine.com/news-notes/news/55396266/pack-expo-international-2026-showcases-sustainability-technologies-for-manufacturers",
+   "date": "2026-10-20",
+   "source": "Processing Magazine",
+   "img": "https://img.processingmagazine.com/files/base/ebm/pcm/image/2026/08/6a74bebe00706bfb4676e2f5-pack_expo_release.png?auto=format,compress&fit=fill&fill=blur&w=1200&h=630",
+   "tags": [
+    "글로벌",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "포장·가공 장비협회 PMMI가 팩 엑스포 인터내셔널 2026(10월18~21일, 시카고)에서 발표한 설문에 따르면, 완제품 기업의 82%가 지속가능성 관련 활동에 적극 참여하고 있으며, 설비 제조사(OEM)의 64%는 지속가능성이 설비 설계 결정에 직접 영향을 준다고 답했다. 행사장에는 재활용성·순환경제 전략에 특화된 '지속가능성 센트럴' 구역이 별도로 마련됐다.",
+   "insight": "그래서— 지속가능 포장은 더 이상 마케팅 문구가 아니라 설비 투자 의사결정표의 한 줄이 됐다.",
+   "event_date": "2026-10-20",
+   "source_published": "2026-08-06"
   },
   {
    "is_reg": false,
@@ -108,7 +113,7 @@
    "url": "https://amec.es/en/?p=56071",
    "date": "2026-10-20",
    "source": "AMEC",
-   "img": "",
+   "img": "https://amec.es/wp-content/uploads/2025/05/segellmemberof.png",
    "tags": [
     "아세안",
     "S3상용",
@@ -117,7 +122,8 @@
    ],
    "body": "인도네시아 자카르타국제전시장(JIExpo)에서 10월20일부터 23일까지 올팩 인도네시아 2026이 열린다. 식품·음료·제약·화장품 전 분야의 가공·포장·충전·자동화·라벨링 기술을 아우르며, 주최 측은 50개국에서 1,500개 이상 업체가 참가한다고 밝혔다.",
    "insight": "그래서— 동남아 최대 포장전시회가 화장품 공급망까지 넓히며, 인도네시아가 지역 포장 허브로 자리잡고 있다.",
-   "event_date": "2026-10-20"
+   "event_date": "2026-10-20",
+   "source_published": "2025-07-14"
   },
   {
    "is_reg": false,
@@ -127,7 +133,7 @@
    "url": "https://nocutnews.co.kr/news/6565114",
    "date": "2026-10-22",
    "source": "노컷뉴스",
-   "img": "",
+   "img": "https://file2.nocutnews.co.kr/newsroom/image/2026/08/19/202608191928580041_0.jpg",
    "tags": [
     "한국",
     "S3상용",
@@ -136,7 +142,8 @@
    ],
    "body": "충청북도와 청주시가 주최하고 오송바이오진흥재단이 주관하는 '2026 오송 화장품뷰티엑스포'가 10월22일부터 24일까지 청주 오스코에서 열린다. 226개 기업이 참가를 신청했고 국내외 바이어 500여명이 참여해 2,600억원 규모의 수출 상담을 진행할 예정이며, 창업 7년 이내 기업 10곳을 선발해 투자설명회와 유통 연계를 지원하는 초기기업 성장 프로그램이 처음 운영된다.",
    "insight": "그래서— 지방정부가 주도하는 화장품 엑스포도 이제 '전시'가 아니라 '수출 상담·투자 연결'을 숫자로 증명하는 자리로 바뀌고 있다.",
-   "event_date": "2026-10-22"
+   "event_date": "2026-10-22",
+   "source_published": "2026-08-19"
   },
   {
    "is_reg": false,
@@ -146,7 +153,7 @@
    "url": "https://www.packagingdigest.com/flexible-packaging/resealable-zipper-closures-advance-with-pcr-paper-pouch-formats",
    "date": "2026-10-20",
    "source": "Packaging Digest",
-   "img": "",
+   "img": "https://eu-images.contentstack.com/v3/assets/blta023acee29658dfc/bltafdc1ad783710edf/6ad6f3edb2dc8cc8764a9d9f/fresh-lock-pcr-closures-and-emerging-paper-pouches.jpg?disable=upscale&width=1200&height=630&fit=crop",
    "tags": [
     "미국",
     "S2프로토",
@@ -155,7 +162,8 @@
    ],
    "body": "프레시락이 팩 엑스포 인터내셔널 2026(부스 S-3907)에서 기계적 재활용 PCR을 25% 함유한 재밀봉 지퍼 클로저와, 종이 파우치에 적용 가능한 신규 압착형(press-to-close) 지퍼를 공개했다. 회사는 각 주의 EPR 규제가 강화되면서 브랜드들이 포장 전체를 규정 준수 소재로 전환해야 하는 압박이 커지고 있다고 설명했다.",
    "insight": "그래서— 지퍼 클로저 하나까지도 'EPR 준수 가능 여부'가 구매 기준에 들어가는 시대가 됐다.",
-   "event_date": "2026-10-20"
+   "event_date": "2026-10-20",
+   "source_published": null
   },
   {
    "is_reg": false,
@@ -165,7 +173,7 @@
    "url": "https://www.ahlstrom.com/campaigns/packexpo-2026/",
    "date": "2026-10-20",
    "source": "Ahlstrom",
-   "img": "",
+   "img": "https://www.ahlstrom.com/link/cd3a5a8ab4814b6ba5bd80c31e78ebe2.aspx",
    "tags": [
     "미국",
     "S3상용",
@@ -174,7 +182,8 @@
    ],
    "body": "알스트롬이 팩 엑스포 인터내셔널 2026(부스 W-45020)에서 기존 포장재를 종이 기반 소재로 대체할 수 있는 신규 바리어 종이 기술을 선보였다. 수분·습기·그리스 저항성을 갖추면서도 재활용이 가능하고 열접착이 가능한 경량 FSC 인증 종이로, 식품·소비재 포장용으로 선보였다.",
    "insight": "그래서— '종이로 바꾸면 방수·방습 성능을 포기해야 한다'는 통념이 소재 단에서부터 깨지고 있다.",
-   "event_date": "2026-10-20"
+   "event_date": "2026-10-20",
+   "source_published": null
   },
   {
    "is_reg": false,
@@ -184,7 +193,7 @@
    "url": "https://kanekagreenplanet.com/event/pack-expo-2026/",
    "date": "2026-10-20",
    "source": "Kaneka Green Planet",
-   "img": "",
+   "img": "https://kanekagreenplanet.com/wp-content/uploads/2023/07/sq-pack-1.webp",
    "tags": [
     "미국",
     "S2프로토",
@@ -193,45 +202,8 @@
    ],
    "body": "일본 카네카의 그린플래닛 사업부가 팩 엑스포 인터내셔널 2026 '용기·소재관'(부스 SL-19009)에서 생분해성 바이오폴리머 PHBH를 포장·필름·파우치·병·식기류용으로 소개했다. 가정용·산업용 퇴비화와 해양 생분해성을 모두 인증받았으며 미세플라스틱을 남기지 않는다고 회사 측은 밝혔다.",
    "insight": "그래서— '해양 생분해'까지 인증된 소재가 등장하면서, 생분해 플라스틱의 적용 범위가 식기·일회용품을 넘어 포장재로 확장되고 있다.",
-   "event_date": "2026-10-20"
-  },
-  {
-   "is_reg": false,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "RND 오토메이션, 파우칭 로봇 시연으로 자동화 수요 공략",
-   "url": "https://www.packworld.com/trends/controls-machine-components/product/22975224/iautomation-a-division-of-cas-holdings-iautomation-to-attend-pack-expo-international-2026-supporting-sister-company-rnd-automation",
-   "date": "2026-10-20",
-   "source": "Packworld",
-   "img": "",
-   "tags": [
-    "미국",
-    "S3상용",
-    "기술혁신",
-    "업계공인"
-   ],
-   "body": "RND 오토메이션이 팩 엑스포 인터내셔널 2026(부스 N-5115)에서 실시간 파우칭 자동화 시연과 대형 FANUC M-710 로봇 전시를 선보였다. 계열사 아이오토메이션은 현장에서 두산로보틱스·온로봇·FANUC 등의 기술을 적용한 테스트벤치를 함께 운영하며 자동화 도입을 검토하는 업체들을 지원했다.",
-   "insight": "그래서— 인력난에 시달리는 중소 충전·포장업체들에게 로봇 자동화가 '전시 데모'가 아니라 '현장 검증 단계'로 넘어가고 있다.",
-   "event_date": "2026-10-20"
-  },
-  {
-   "is_reg": false,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "요바트, 플라스틱·유리·금속 용기 라벨링용 접착제 라인업 전시",
-   "url": "https://www.packworld.com/leaders-new/materials/adhesives-tape/product/22975814/jowat-jowat-at-pack-expo-international-2026-the-right-adhesive-solutions-for-every-packaging-application",
-   "date": "2026-10-20",
-   "source": "Packworld",
-   "img": "",
-   "tags": [
-    "미국",
-    "S3상용",
-    "기술혁신",
-    "업계공인"
-   ],
-   "body": "독일 접착제 기업 요바트가 팩 엑스포 인터내셔널 2026(부스 S-3952)에서 플라스틱·유리·금속 용기 라벨링용 수계 접착제 '요와콜 759.xx'와 핫멜트 '요바썸 895.xx', 케이스 실링용 핫멜트 '요바썸 PO 851.40' 등 포장 전 공정용 접착제 라인업을 전시했다.",
-   "insight": "그래서— 라벨이 떼어지지 않아야 '재활용 적합성 평가'를 통과하는 시대, 접착제 선택이 용기 재질만큼 중요한 변수가 됐다.",
-   "event_date": "2026-10-20"
+   "event_date": "2026-10-20",
+   "source_published": "2023-07-10"
   }
  ],
  "regulation_current": [
