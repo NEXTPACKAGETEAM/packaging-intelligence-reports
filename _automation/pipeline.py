@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_issue import build  # noqa: E402
 from fill_photos import fetch, find_photo, valid_image  # noqa: E402
 
-MIN_ITEMS = 12
+MIN_ITEMS = 1
 MAX_ITEMS = 20
 STALE_GRACE_DAYS = 2
 
