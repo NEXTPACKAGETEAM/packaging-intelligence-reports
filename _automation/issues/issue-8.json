@@ -86,9 +86,9 @@
    "flag": "🇪🇺",
    "region": "유럽",
    "headline": "EPR '대리인' 의무 유예, 중소기업으로 범위 축소 의결",
-   "url": "https://www.lovguiden.dk/en/det-offentlige/europa-parlamentet/2026-10-20-ep-vil-kun-fritage-smaa-eu-virksomheder-for-repraesentant-i-affaldsregler",
-   "date": "2026-10-20",
-   "source": "Lovguiden",
+   "url": "https://www.packagingeurope.com/eu-parliament-votes-to-exempt-smes-from-representative-rules-until-2035/",
+   "date": "2026-10-21",
+   "source": "Packaging Europe",
    "img": "",
    "tags": [
     "유럽",
@@ -96,7 +96,7 @@
     "업계공인",
     "경쟁 추격"
    ],
-   "body": "유럽의회가 본회의에서 포장재·배터리 생산자책임재활용제도(EPR)의 '대리인(authorised representative)' 의무를 일시 유예하는 방안을 찬성 616표로 의결했다. 집행위가 제안한 전체 유예안과 달리, 의회는 종업원 50인 미만·연 매출 1,000만 유로 미만의 EU 역내 소기업으로 대상을 좁혔으며, 역외 기업에는 대리인 의무가 그대로 유지된다. 이 입장은 각료이사회와의 협상을 거쳐야 확정된다.",
+   "body": "유럽의회가 10월20일 본회의에서 포장재·배터리 생산자책임재활용제도(EPR)의 '대리인(authorised representative)' 의무를 일시 유예하는 방안을 찬성 616표, 반대 9표, 기권 39표로 의결했다. 집행위가 제안한 전체 유예안과 달리, 의회는 종업원 50인 미만·연 매출 1,000만 유로 미만의 EU 역내 소기업으로 대상을 좁혔으며, 역외 기업에는 대리인 의무가 그대로 유지된다. 이 입장은 2035년까지(또는 순환경제법 발효 전까지) 적용되며 각료이사회와의 3자협상을 거쳐야 확정된다.",
    "insight": "그래서— EPR 간소화 혜택이 역내 소기업에만 좁혀지면서, 역외에서 EU로 수출하는 화장품 용기 공급사는 대리인 비용 부담을 계속 져야 한다.",
    "event_date": "2026-10-20"
   },
@@ -137,6 +137,101 @@
    "body": "충청북도와 청주시가 주최하고 오송바이오진흥재단이 주관하는 '2026 오송 화장품뷰티엑스포'가 10월22일부터 24일까지 청주 오스코에서 열린다. 226개 기업이 참가를 신청했고 국내외 바이어 500여명이 참여해 2,600억원 규모의 수출 상담을 진행할 예정이며, 창업 7년 이내 기업 10곳을 선발해 투자설명회와 유통 연계를 지원하는 초기기업 성장 프로그램이 처음 운영된다.",
    "insight": "그래서— 지방정부가 주도하는 화장품 엑스포도 이제 '전시'가 아니라 '수출 상담·투자 연결'을 숫자로 증명하는 자리로 바뀌고 있다.",
    "event_date": "2026-10-22"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "프레시락, PCR 25% 지퍼와 종이 호환 클로저로 EPR 대응",
+   "url": "https://www.packagingdigest.com/flexible-packaging/resealable-zipper-closures-advance-with-pcr-paper-pouch-formats",
+   "date": "2026-10-20",
+   "source": "Packaging Digest",
+   "img": "",
+   "tags": [
+    "미국",
+    "S2프로토",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "프레시락이 팩 엑스포 인터내셔널 2026(부스 S-3907)에서 기계적 재활용 PCR을 25% 함유한 재밀봉 지퍼 클로저와, 종이 파우치에 적용 가능한 신규 압착형(press-to-close) 지퍼를 공개했다. 회사는 각 주의 EPR 규제가 강화되면서 브랜드들이 포장 전체를 규정 준수 소재로 전환해야 하는 압박이 커지고 있다고 설명했다.",
+   "insight": "그래서— 지퍼 클로저 하나까지도 'EPR 준수 가능 여부'가 구매 기준에 들어가는 시대가 됐다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "알스트롬, 재활용 가능한 경량 열접착 바리어 종이 공개",
+   "url": "https://www.ahlstrom.com/campaigns/packexpo-2026/",
+   "date": "2026-10-20",
+   "source": "Ahlstrom",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "알스트롬이 팩 엑스포 인터내셔널 2026(부스 W-45020)에서 기존 포장재를 종이 기반 소재로 대체할 수 있는 신규 바리어 종이 기술을 선보였다. 수분·습기·그리스 저항성을 갖추면서도 재활용이 가능하고 열접착이 가능한 경량 FSC 인증 종이로, 식품·소비재 포장용으로 선보였다.",
+   "insight": "그래서— '종이로 바꾸면 방수·방습 성능을 포기해야 한다'는 통념이 소재 단에서부터 깨지고 있다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "카네카, 생분해 바이오폴리머 PHBH 북미 포장시장에 소개",
+   "url": "https://kanekagreenplanet.com/event/pack-expo-2026/",
+   "date": "2026-10-20",
+   "source": "Kaneka Green Planet",
+   "img": "",
+   "tags": [
+    "미국",
+    "S2프로토",
+    "지속가능",
+    "발상혁신"
+   ],
+   "body": "일본 카네카의 그린플래닛 사업부가 팩 엑스포 인터내셔널 2026 '용기·소재관'(부스 SL-19009)에서 생분해성 바이오폴리머 PHBH를 포장·필름·파우치·병·식기류용으로 소개했다. 가정용·산업용 퇴비화와 해양 생분해성을 모두 인증받았으며 미세플라스틱을 남기지 않는다고 회사 측은 밝혔다.",
+   "insight": "그래서— '해양 생분해'까지 인증된 소재가 등장하면서, 생분해 플라스틱의 적용 범위가 식기·일회용품을 넘어 포장재로 확장되고 있다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "RND 오토메이션, 파우칭 로봇 시연으로 자동화 수요 공략",
+   "url": "https://www.packworld.com/trends/controls-machine-components/product/22975224/iautomation-a-division-of-cas-holdings-iautomation-to-attend-pack-expo-international-2026-supporting-sister-company-rnd-automation",
+   "date": "2026-10-20",
+   "source": "Packworld",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "RND 오토메이션이 팩 엑스포 인터내셔널 2026(부스 N-5115)에서 실시간 파우칭 자동화 시연과 대형 FANUC M-710 로봇 전시를 선보였다. 계열사 아이오토메이션은 현장에서 두산로보틱스·온로봇·FANUC 등의 기술을 적용한 테스트벤치를 함께 운영하며 자동화 도입을 검토하는 업체들을 지원했다.",
+   "insight": "그래서— 인력난에 시달리는 중소 충전·포장업체들에게 로봇 자동화가 '전시 데모'가 아니라 '현장 검증 단계'로 넘어가고 있다.",
+   "event_date": "2026-10-20"
+  },
+  {
+   "is_reg": false,
+   "flag": "🇺🇸",
+   "region": "미국",
+   "headline": "요바트, 플라스틱·유리·금속 용기 라벨링용 접착제 라인업 전시",
+   "url": "https://www.packworld.com/leaders-new/materials/adhesives-tape/product/22975814/jowat-jowat-at-pack-expo-international-2026-the-right-adhesive-solutions-for-every-packaging-application",
+   "date": "2026-10-20",
+   "source": "Packworld",
+   "img": "",
+   "tags": [
+    "미국",
+    "S3상용",
+    "기술혁신",
+    "업계공인"
+   ],
+   "body": "독일 접착제 기업 요바트가 팩 엑스포 인터내셔널 2026(부스 S-3952)에서 플라스틱·유리·금속 용기 라벨링용 수계 접착제 '요와콜 759.xx'와 핫멜트 '요바썸 895.xx', 케이스 실링용 핫멜트 '요바썸 PO 851.40' 등 포장 전 공정용 접착제 라인업을 전시했다.",
+   "insight": "그래서— 라벨이 떼어지지 않아야 '재활용 적합성 평가'를 통과하는 시대, 접착제 선택이 용기 재질만큼 중요한 변수가 됐다.",
+   "event_date": "2026-10-20"
   }
  ],
  "regulation_current": [
