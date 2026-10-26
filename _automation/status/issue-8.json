@@ -1,0 +1,18 @@
+{
+ "number": 8,
+ "ok": false,
+ "final": true,
+ "live": null,
+ "problems": [
+  "only 6 newsletter items survived verification (minimum 12)"
+ ],
+ "dropped": [
+  {
+   "headline": "EPR '대리인' 의무 유예, 중소기업으로 범위 축소 의결",
+   "reason": "no verifiable photo"
+  }
+ ],
+ "items": 6,
+ "photos": 6,
+ "checked_at": "2026-10-26T04:26:09.796989+00:00"
+}
