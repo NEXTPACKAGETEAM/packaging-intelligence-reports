@@ -1,0 +1,30 @@
+{
+ "number": 9,
+ "ok": false,
+ "final": true,
+ "live": null,
+ "problems": [
+  "no regulation-radar item survived verification"
+ ],
+ "dropped": [
+  {
+   "headline": "오아이글래스, 3분기 순손실 전환 — 유럽 사업 영업이익 98% 급감",
+   "reason": "no verifiable photo"
+  },
+  {
+   "headline": "유럽 플렉소 인쇄 최고상 '다이아몬드 어워드', 10월 29일 바르셀로나서 개최",
+   "reason": "stale: source published 2026-04-07"
+  },
+  {
+   "headline": "EU 의회, 소상공인 EPR 대리인 면제 가결 — 이사회와 시한 2032 대 2035로 엇갈려",
+   "reason": "no verifiable photo"
+  },
+  {
+   "headline": "캘리포니아 SB343, 제조일 기준 10월 4일 지났지만 '비회원사' 집행 리스크는 여전",
+   "reason": "stale: newest date on page is 2026-10-20"
+  }
+ ],
+ "items": 2,
+ "photos": 2,
+ "checked_at": "2026-11-02T04:21:15.004938+00:00"
+}
