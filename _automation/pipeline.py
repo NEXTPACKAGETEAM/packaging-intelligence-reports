@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_issue import build  # noqa: E402
 from fill_photos import fetch, find_photo, valid_image  # noqa: E402
 
-MIN_ITEMS = 1
+MIN_ITEMS = 0  # owner 2026-11-02: never block publishing because items were dropped
 MAX_ITEMS = 20
 STALE_GRACE_DAYS = 2
 
@@ -117,8 +117,6 @@ def main(issue_path):
     problems = []
     if len(kept) < MIN_ITEMS:
         problems.append(f"only {len(kept)} newsletter items survived verification (minimum {MIN_ITEMS})")
-    if not reg:
-        problems.append("no regulation-radar item survived verification")
     if len(d["regulation_current"]) != 5 or len(d["regulation_future"]) != 5:
         problems.append("regulation report must have exactly 5 current + 5 future items")
 
