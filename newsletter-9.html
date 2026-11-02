@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 9호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">유리는 흔들리고, 라벨은 몰려든다</h1>
+    <div class="meta-bar">
+      <span class="accent">9호</span><span class="meta-sep">·</span>
+      2026.10.27 &ndash; 11.02<span class="meta-sep">·</span>
+      신선 <b>2</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">0</span><span class="meta-sep">·</span>
+      사진 2
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주는 포장재 업계의 &#x27;원가 압박&#x27;과 &#x27;표시 규제 불확실성&#x27;이 동시에 드러났다 — 세계 최대 유리병 제조사 오아이글래스(O-I Glass)는 3분기에 순손실로 돌아서며 유럽 생산설비 폐쇄를 검토했고, 유럽·인도의 라벨·연포장 전시회(FTA 다이아몬드 어워드, LOUPE 인디아)는 참가 규모를 키우며 소재 전환 수요를 흡수했다. 규제 전선에서는 EU 포장재 EPR 소상공인 면제의 최종 시한을 두고 의회(2035년)와 이사회(2032년)가 엇갈렸고, 미국 캘리포니아 SB343의 &#x27;재활용 가능&#x27; 표시 규제는 가처분 상태가 이어지며 법적 불확실성이 가시지 않고 있다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">소상공인 면제를 둘러싼 EU 내부 줄다리기</h2>
+    </div>
+    <div class="item-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="http://www.labelsandlabeling.com/sites/labels/lnl/files/2026-06/loupeindia.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">인도</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">발상혁신</span></div>
+<a class="item-headline-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/loupe-india-opens-registration" target="_blank" rel="noopener"><h3 class="item-headline">🇮🇳 인도 — &#x27;라벨엑스포 인디아&#x27;, 10주년에 &#x27;LOUPE 인디아&#x27;로 개명 — 10월 29일 개막</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-29</span><span class="meta-sep"> · </span>Labels &amp; Labeling</div>
+<a class="item-desc-link" href="https://www.labelsandlabeling.com/news/loupe-formerly-labelexpo/loupe-india-opens-registration" target="_blank" rel="noopener"><p class="item-desc">인도 최대 라벨·패키지 인쇄 전시회가 10주년을 맞아 &#x27;라벨엑스포 인디아&#x27;에서 &#x27;LOUPE 인디아&#x27;로 이름을 바꾸고 10월 29일부터 11월 1일까지 그레이터노이다 인디아 엑스포 센터에서 열렸다. 라벨 중심이던 전시 영역을 수축 슬리브·파우치 등 연포장과 폴딩카톤까지 넓혔으며, 60개국에서 온 250여 개 업체가 참가했다.</p></a>
+<div class="item-insight">그래서— &#x27;라벨 전시회&#x27;가 &#x27;연포장 전시회&#x27;로 간판을 바꾸는 흐름은, 라벨과 플렉서블 패키징의 경계가 실제로 허물어지고 있음을 보여준다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://cdn.creamermedia.com/assets/articles/images/resized/0001304722_resized_propakcape2026pressrelease5image1022.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">글로벌</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">경쟁 추격</span></div>
+<a class="item-headline-link" href="https://engineeringnews.co.za/article/packaging-businesses-under-pressure-turn-to-technology-at-propak-cape-2026-2026-10-09" target="_blank" rel="noopener"><h3 class="item-headline">🌐 글로벌 — &#x27;프로팩 케이프 2026&#x27;, 10월 27일 케이프타운 개막 — 참가 규모 역대 최대</h3></a>
+<div class="item-meta"><span class="meta-date">2026-10-09</span><span class="meta-sep"> · </span>Engineering News</div>
+<a class="item-desc-link" href="https://engineeringnews.co.za/article/packaging-businesses-under-pressure-turn-to-technology-at-propak-cape-2026-2026-10-09" target="_blank" rel="noopener"><p class="item-desc">남아프리카공화국 케이프타운국제컨벤션센터(CTICC)에서 10월 27~29일 &#x27;프로팩 케이프 2026&#x27;이 열렸다. 2023년 190개사였던 참가 규모가 200개사 이상으로 늘었으며, 원가 압박에 놓인 식음료·와인 포장 업계가 자동화 설비와 효율화 기술로 돌파구를 찾는 모습이 두드러졌다.</p></a>
+<div class="item-insight">그래서— 포장 원가가 오를수록, 설비 투자를 통한 효율화가 먼저 움직인다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>

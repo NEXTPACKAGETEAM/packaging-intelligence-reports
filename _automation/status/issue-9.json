@@ -1,11 +1,9 @@
 {
  "number": 9,
- "ok": false,
- "final": true,
+ "ok": true,
+ "final": false,
  "live": null,
- "problems": [
-  "no regulation-radar item survived verification"
- ],
+ "problems": [],
  "dropped": [
   {
    "headline": "오아이글래스, 3분기 순손실 전환 — 유럽 사업 영업이익 98% 급감",
@@ -26,5 +24,16 @@
  ],
  "items": 2,
  "photos": 2,
- "checked_at": "2026-11-02T04:21:15.004938+00:00"
+ "checked_at": "2026-11-02T04:35:45.542676+00:00",
+ "entry": {
+  "number": 9,
+  "date_range": "2026.10.27~11.02",
+  "newsletter_path": "newsletter-9.html",
+  "regulation_path": "regulation-9.html",
+  "newsletter_items": 2,
+  "photo_count": 2,
+  "regulation_current": 5,
+  "regulation_future": 5,
+  "masthead_title": "유리는 흔들리고, 라벨은 몰려든다"
+ }
 }

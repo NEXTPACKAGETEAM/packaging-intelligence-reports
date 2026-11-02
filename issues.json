@@ -75,5 +75,16 @@
     "regulation_current": 5,
     "regulation_future": 5,
     "masthead_title": "포장 업계 가을 성수기, 승부는 결국 규제"
+  },
+  {
+    "number": 9,
+    "date_range": "2026.10.27~11.02",
+    "newsletter_path": "newsletter-9.html",
+    "regulation_path": "regulation-9.html",
+    "newsletter_items": 2,
+    "photo_count": 2,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "유리는 흔들리고, 라벨은 몰려든다"
   }
 ]

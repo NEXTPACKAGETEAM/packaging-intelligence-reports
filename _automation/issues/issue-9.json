@@ -7,44 +7,6 @@
  "newsletter_items": [
   {
    "is_reg": false,
-   "flag": "🌐",
-   "region": "글로벌",
-   "headline": "오아이글래스, 3분기 순손실 전환 — 유럽 사업 영업이익 98% 급감",
-   "url": "https://easternherald.com/press-release/o-i-glass-reports-third-quarter-2026-results/",
-   "date": "2026-10-27",
-   "source": "Eastern Herald / O-I Glass",
-   "tags": [
-    "글로벌",
-    "S3상용",
-    "경쟁 추격",
-    "지속가능"
-   ],
-   "body": "세계 최대 유리병 제조사 오아이글래스(O-I Glass)가 10월 27일 발표한 3분기 실적에서 순손실 1,300만 달러(주당 0.08달러)를 기록하며 전년 동기 순이익 3,000만 달러에서 적자로 전환했다. 매출은 16억 2,300만 달러로 2% 감소했고, 유럽 사업 영업이익은 9,500만 달러에서 200만 달러로 급감했다. 회사는 유럽 생산설비 영구 폐쇄를 검토하며 4분기에 1억~1억 2,000만 달러의 특별손실을 예상한다고 밝혔다.",
-   "insight": "그래서— 유리 용기 공급사의 유럽 구조조정이 이어지면, 프리미엄 뷰티 브랜드의 '유리 대 대체 소재' 용기 선택 셈법도 함께 흔들릴 수 있다.",
-   "img": "",
-   "source_published": "2026-10-27"
-  },
-  {
-   "is_reg": false,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "유럽 플렉소 인쇄 최고상 '다이아몬드 어워드', 10월 29일 바르셀로나서 개최",
-   "url": "https://www.flexography.org/industry-news/fta-europe-diamond-awards-slated-for-barcelona/",
-   "date": "2026-10-29",
-   "source": "FTA Europe / Flexography.org",
-   "tags": [
-    "유럽",
-    "S3상용",
-    "업계공인",
-    "기술혁신"
-   ],
-   "body": "유럽 플렉소그래피 기술협회(FTA Europe)가 2년마다 여는 '다이아몬드 어워드' 시상식이 10월 29일 스페인 바르셀로나 호텔 카탈로니아에서 열렸다. 이탈리아·벨기에·프랑스·스페인·영국 등 5개국의 국가별 플렉소 대회 금상 수상작 중 34개 기업이 라벨·연포장·골판지·특수 플렉소 4개 부문 최종 후보로 올라 유럽 최고 자리를 다퉜다.",
-   "insight": "그래서— 화장품 라벨·파우치의 인쇄 품질 경쟁은 이제 국가 단위를 넘어 '유럽 통합 리그'로 올라서고 있다.",
-   "img": "",
-   "source_published": null
-  },
-  {
-   "is_reg": false,
    "flag": "🇮🇳",
    "region": "인도",
    "headline": "'라벨엑스포 인디아', 10주년에 'LOUPE 인디아'로 개명 — 10월 29일 개막",
@@ -59,9 +21,9 @@
    ],
    "body": "인도 최대 라벨·패키지 인쇄 전시회가 10주년을 맞아 '라벨엑스포 인디아'에서 'LOUPE 인디아'로 이름을 바꾸고 10월 29일부터 11월 1일까지 그레이터노이다 인디아 엑스포 센터에서 열렸다. 라벨 중심이던 전시 영역을 수축 슬리브·파우치 등 연포장과 폴딩카톤까지 넓혔으며, 60개국에서 온 250여 개 업체가 참가했다.",
    "insight": "그래서— '라벨 전시회'가 '연포장 전시회'로 간판을 바꾸는 흐름은, 라벨과 플렉서블 패키징의 경계가 실제로 허물어지고 있음을 보여준다.",
-   "img": "",
+   "img": "http://www.labelsandlabeling.com/sites/labels/lnl/files/2026-06/loupeindia.jpg",
    "event_date": "2026-10-29",
-   "source_published": null
+   "source_published": "2026-06-11"
   },
   {
    "is_reg": false,
@@ -79,47 +41,9 @@
    ],
    "body": "남아프리카공화국 케이프타운국제컨벤션센터(CTICC)에서 10월 27~29일 '프로팩 케이프 2026'이 열렸다. 2023년 190개사였던 참가 규모가 200개사 이상으로 늘었으며, 원가 압박에 놓인 식음료·와인 포장 업계가 자동화 설비와 효율화 기술로 돌파구를 찾는 모습이 두드러졌다.",
    "insight": "그래서— 포장 원가가 오를수록, 설비 투자를 통한 효율화가 먼저 움직인다.",
-   "img": "",
+   "img": "https://cdn.creamermedia.com/assets/articles/images/resized/0001304722_resized_propakcape2026pressrelease5image1022.jpg",
    "event_date": "2026-10-27",
    "source_published": "2026-10-09"
-  },
-  {
-   "is_reg": true,
-   "flag": "🇪🇺",
-   "region": "유럽",
-   "headline": "EU 의회, 소상공인 EPR 대리인 면제 가결 — 이사회와 시한 2032 대 2035로 엇갈려",
-   "url": "https://www.brusselstimes.com/2369992/meps-back-waste-exemption-for-small-businesses-amid-circular-economy-push",
-   "date": "2026-10-20",
-   "source": "The Brussels Times",
-   "tags": [
-    "유럽",
-    "S3상용",
-    "업계공인",
-    "경쟁 추격"
-   ],
-   "body": "유럽의회가 10월 20일 본회의에서 찬성 616표, 반대 9표, 기권 39표로 포장재·폐배터리 생산자책임(EPR) 관련 입장을 채택했다. 직원 50인 미만, 연매출 1,000만 유로 미만인 역내 소상공인에 한해 EPR 대리인 선임 의무를 2035년까지 유예하는 내용이다. 하루 뒤인 10월 21일 EU 이사회는 연간 1톤 미만 포장재를 출시하는 생산자에 한해 2032년까지만 유예하는 별도 입장을 채택해, 최종 시한은 이후 트리로그(trilogue) 협상에서 결정된다.",
-   "insight": "그래서— '소상공인 봐주기'가 끝나는 시점이 2032년이 될지 2035년이 될지에 따라, 중소 화장품 브랜드의 EU 진출 비용 계산이 크게 달라진다.",
-   "img": "",
-   "source_published": "2026-10-20"
-  },
-  {
-   "is_reg": true,
-   "flag": "🇺🇸",
-   "region": "미국",
-   "headline": "캘리포니아 SB343, 제조일 기준 10월 4일 지났지만 '비회원사' 집행 리스크는 여전",
-   "url": "https://www.dwt.com/blogs/energy--environmental-law-blog/2026/07/sb-343-truth-in-recycling-injunction",
-   "date": "2026-07-15",
-   "source": "Davis Wright Tremaine",
-   "tags": [
-    "미국",
-    "S3상용",
-    "업계공인",
-    "지속가능"
-   ],
-   "body": "캘리포니아의 '진실 재활용법' SB343은 올해 제조된 포장부터 재활용 표시 요건을 강화하도록 설계됐지만, 7월 14일 연방법원이 식품·포장업계 등의 소송을 받아들여 캘리포니아 검찰총장의 집행을 가처분으로 막아둔 상태가 이어지고 있다. 전문가들은 이 가처분이 소송을 제기한 단체의 회원사가 아닌 기업에는 그대로 적용되지 않을 수 있어, 10월 4일 이후 제조분부터는 비회원사에 집행 리스크가 남아 있다고 지적한다.",
-   "insight": "그래서— 소송에 참여하지 않은 중소 브랜드일수록, 가처분 뒤에 숨지 말고 '재활용 가능' 표시의 근거를 스스로 갖춰둬야 한다.",
-   "img": "",
-   "source_published": "2026-07-15"
   }
  ],
  "regulation_current": [
