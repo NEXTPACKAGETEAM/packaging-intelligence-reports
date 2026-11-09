@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 10호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">규정은 늦춰지고, 재생원료는 빨라진다</h1>
+    <div class="meta-bar">
+      <span class="accent">10호</span><span class="meta-sep">·</span>
+      2026.11.03 &ndash; 11.09<span class="meta-sep">·</span>
+      신선 <b>6</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">2</span><span class="meta-sep">·</span>
+      사진 6
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주 유럽은 상반된 신호를 동시에 냈다 — PPWR 통일 라벨링 규정은 공공협의 절차 추가로 2027년 2분기로 미뤄졌지만, 재생 플라스틱의 &#x27;폐기물 지위 종료&#x27; 기준은 회원국 합의를 끝내고 통일을 향해 움직였다. 현장에서는 산업용 부식방지필름의 재생PE 30% 적용, 균사체 완충재 연구, 농산물 폐기물 식품트레이 소재처럼 &#x27;재생원료·대체소재&#x27;를 실제 제품에 넣는 움직임이 이어졌다. 미국은 캘리포니아 SB54·SB343이 시행 국면에 들어갔고, 인도·중국은 재생원료 함량과 비닐봉투 금지를 각각 더 세게 밀어붙이고 있다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">라벨링은 미뤄지고, 재활용 기준은 당겨지다</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639295579748634598AdobeStock_2103245425_1_.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/news/eu-harmonizes-end-of-waste-rules-recycled-plastics.html" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — EU, 재생 플라스틱 &#x27;폐기물 지위 종료&#x27; 기준 통일에 합의</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-04</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/news/eu-harmonizes-end-of-waste-rules-recycled-plastics.html" target="_blank" rel="noopener"><p class="item-desc">EU 회원국들이 유럽연합 집행위원회 기술적응위원회 회의에서 재생 플라스틱의 &#x27;폐기물 지위 종료(End-of-Waste)&#x27; 기준을 EU 전역에서 통일하는 이행규정에 찬성표를 던졌다. 기계적·용제 기반 재활용으로 만든 재생 플라스틱이 언제 폐기물 지위를 벗어나 단일시장에서 상품으로 거래될 수 있는지에 대한 법적 불확실성을 해소하려는 조치다.</p></a>
+<div class="item-insight">그래서— 재생 플라스틱 유통의 &#x27;국경&#x27;이 사라지면서, 역내 조달망을 갖춘 소재 공급사의 협상력이 커진다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://article-cns.cnsmedia.com/articleimgs/resized_rect_newsimages/jpg/639295589891927953Steve_Palfrey_Suffolk_County_Council_.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">영국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://www.packaginginsights.com/news/biffa-uk-recycling-epr-funding.html" target="_blank" rel="noopener"><h3 class="item-headline">🇬🇧 영국 — Biffa, pEPR 자금으로 서퍽 재활용시설 업그레이드 완료</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-05</span><span class="meta-sep"> · </span>Packaging Insights</div>
+<a class="item-desc-link" href="https://www.packaginginsights.com/news/biffa-uk-recycling-epr-funding.html" target="_blank" rel="noopener"><p class="item-desc">영국 재활용업체 Biffa가 서퍽주 메이슨 자재회수시설(MRF)을 1,200만 파운드 규모로 업그레이드했다. 투자금의 절반은 Biffa 자체 자금, 절반은 영국의 확대생산자책임(pEPR) 제도로 지자체에 배정된 재원에서 나왔다.</p></a>
+<div class="item-insight">그래서— pEPR 분담금이 &#x27;서류상 제도&#x27;를 넘어 실제 분류시설 설비투자로 이어지는 첫 사례들이 쌓이고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/11/PE_Benz_Film.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/benzs-vapour-corrosion-inhibitor-films-contain-30-post-consumer-pe/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — BENZ, 부식방지 포장필름에 재생 PE 30% 적용</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-06</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/benzs-vapour-corrosion-inhibitor-films-contain-30-post-consumer-pe/" target="_blank" rel="noopener"><p class="item-desc">독일 BENZ Packaging이 금속 부품 운송에 쓰이는 기화성 부식방지(VCI) 필름에 소비자 재생 폴리에틸렌(PE)을 최소 30% 적용했다. 함부르크 BFSV 포장연구소가 TL 8135-0043 기준으로 시험한 결과 최고 등급인 3등급 부식방지 성능을 유지하는 것으로 확인됐다.</p></a>
+<div class="item-insight">그래서— &#x27;재생원료를 쓰면 성능이 떨어진다&#x27;는 통념이 산업용 포장재에서도 깨지고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/11/Paul-Gilligan--MMC-CEO-and-Almudena-Ortiz-Urquiza--assistant-professor-Horticulture--University-of-Nottingham.jpg" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S1개념</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-blue">발상혁신</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/university-of-nottingham-secures-1-4-million-for-mushroom-eps-packaging-alternative/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 노팅엄대 등 4개 기관, 균사체 완충재로 발포폴리스티렌 대체 연구</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-04</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/university-of-nottingham-secures-1-4-million-for-mushroom-eps-packaging-alternative/" target="_blank" rel="noopener"><p class="item-desc">영국 노팅엄대학이 스완지대·바스대·버섯 소재 기업 Magical Mushroom Company와 함께 총 140만 파운드 규모의 2년짜리 연구 컨소시엄을 출범했다. 영국 공학·물리학연구위원회(EPSRC)가 80만 파운드를 지원하며, 발포폴리스티렌(EPS)을 대체할 균사체 복합재의 생물학적 구조와 표면처리 기술을 연구한다.</p></a>
+<div class="item-insight">그래서— 완충재 영역에서도 &#x27;석유 기반 발포소재&#x27;의 대안이 연구 단계를 넘어 산업 파트너와 함께 움직이고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/11/Orkka.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">사용성</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/orkka-targets-consistency-and-reduced-waste-with-new-film-dispenser/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — Orkka, 낭비 줄이는 핸드 스트레치필름 디스펜서 출시</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-05</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/orkka-targets-consistency-and-reduced-waste-with-new-film-dispenser/" target="_blank" rel="noopener"><p class="item-desc">영국 포장재 유통사 Orkka가 팔레트 포장용 핸드 스트레치필름 디스펜서를 새로 선보였다. 자석식 거치대를 갖추고 430mm·520mm 두 폭의 필름에 호환되며, 사전연신(pre-stretch) 필름과 일반 필름을 모두 쓸 수 있도록 설계됐다.</p></a>
+<div class="item-insight">그래서— 필름 자체의 재생원료 함량만큼이나, &#x27;덜 쓰게 만드는 디스펜서&#x27;도 현장 탄소발자국을 줄이는 변수가 되고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/2026/11/PE_GIRARA.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S1개념</span><span class="tag tag-blue">발상혁신</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.packagingeurope.com/agri-food-waste-to-be-converted-into-food-trays-and-other-disposables/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — Feltwood, 과일·채소 폐기물로 식품 트레이 소재 개발 추진</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-05</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://www.packagingeurope.com/agri-food-waste-to-be-converted-into-food-trays-and-other-disposables/" target="_blank" rel="noopener"><p class="item-desc">스페인 사라고사의 소재 기업 Feltwood가 과일·채소 폐기물을 원료로 만든 100% 식물성 섬유 소재를 식품 트레이 등 일회용 포장으로 확장하는 방안을 검토하고 있다. 현재는 인테리어 소재로 먼저 상용화됐으며, EU 지원 연구에서는 이 소재로 만든 과일 트레이의 환경 편익을 평가한 바 있다.</p></a>
+<div class="item-insight">그래서— &#x27;농업 부산물 → 포장재&#x27; 전환이 아직은 콘셉트 단계이지만, 완전 퇴비화 가능한 트레이의 후보군이 하나 더 늘었다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>

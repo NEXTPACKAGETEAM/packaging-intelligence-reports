@@ -1,0 +1,22 @@
+{
+ "number": 10,
+ "ok": true,
+ "final": false,
+ "live": null,
+ "problems": [],
+ "dropped": [],
+ "items": 6,
+ "photos": 6,
+ "checked_at": "2026-11-09T04:20:17.459507+00:00",
+ "entry": {
+  "number": 10,
+  "date_range": "2026.11.03~11.09",
+  "newsletter_path": "newsletter-10.html",
+  "regulation_path": "regulation-10.html",
+  "newsletter_items": 6,
+  "photo_count": 6,
+  "regulation_current": 5,
+  "regulation_future": 5,
+  "masthead_title": "규정은 늦춰지고, 재생원료는 빨라진다"
+ }
+}

@@ -86,5 +86,16 @@
     "regulation_current": 5,
     "regulation_future": 5,
     "masthead_title": "유리는 흔들리고, 라벨은 몰려든다"
+  },
+  {
+    "number": 10,
+    "date_range": "2026.11.03~11.09",
+    "newsletter_path": "newsletter-10.html",
+    "regulation_path": "regulation-10.html",
+    "newsletter_items": 6,
+    "photo_count": 6,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "규정은 늦춰지고, 재생원료는 빨라진다"
   }
 ]
