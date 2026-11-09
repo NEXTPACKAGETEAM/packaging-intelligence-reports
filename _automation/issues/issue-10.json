@@ -1,0 +1,171 @@
+{
+ "number": 10,
+ "date_range": "2026.11.03~11.09",
+ "masthead_title": "규정은 늦춰지고, 재생원료는 빨라진다",
+ "summary": "이번 주 유럽은 상반된 신호를 동시에 냈다 — PPWR 통일 라벨링 규정은 공공협의 절차 추가로 2027년 2분기로 미뤄졌지만, 재생 플라스틱의 '폐기물 지위 종료' 기준은 회원국 합의를 끝내고 통일을 향해 움직였다. 현장에서는 산업용 부식방지필름의 재생PE 30% 적용, 균사체 완충재 연구, 농산물 폐기물 식품트레이 소재처럼 '재생원료·대체소재'를 실제 제품에 넣는 움직임이 이어졌다. 미국은 캘리포니아 SB54·SB343이 시행 국면에 들어갔고, 인도·중국은 재생원료 함량과 비닐봉투 금지를 각각 더 세게 밀어붙이고 있다.",
+ "reg_section_title": "라벨링은 미뤄지고, 재활용 기준은 당겨지다",
+ "newsletter_items": [
+  {
+   "is_reg": true,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "EU, 재생 플라스틱 '폐기물 지위 종료' 기준 통일에 합의",
+   "url": "https://www.packaginginsights.com/news/eu-harmonizes-end-of-waste-rules-recycled-plastics.html",
+   "date": "2026-11-04",
+   "source": "Packaging Insights",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "업계공인",
+    "지속가능"
+   ],
+   "body": "EU 회원국들이 유럽연합 집행위원회 기술적응위원회 회의에서 재생 플라스틱의 '폐기물 지위 종료(End-of-Waste)' 기준을 EU 전역에서 통일하는 이행규정에 찬성표를 던졌다. 기계적·용제 기반 재활용으로 만든 재생 플라스틱이 언제 폐기물 지위를 벗어나 단일시장에서 상품으로 거래될 수 있는지에 대한 법적 불확실성을 해소하려는 조치다.",
+   "insight": "그래서— 재생 플라스틱 유통의 '국경'이 사라지면서, 역내 조달망을 갖춘 소재 공급사의 협상력이 커진다."
+  },
+  {
+   "is_reg": true,
+   "flag": "🇬🇧",
+   "region": "영국",
+   "headline": "Biffa, pEPR 자금으로 서퍽 재활용시설 업그레이드 완료",
+   "url": "https://www.packaginginsights.com/news/biffa-uk-recycling-epr-funding.html",
+   "date": "2026-11-05",
+   "source": "Packaging Insights",
+   "img": "",
+   "tags": [
+    "영국",
+    "S3상용",
+    "지속가능",
+    "업계공인"
+   ],
+   "body": "영국 재활용업체 Biffa가 서퍽주 메이슨 자재회수시설(MRF)을 1,200만 파운드 규모로 업그레이드했다. 투자금의 절반은 Biffa 자체 자금, 절반은 영국의 확대생산자책임(pEPR) 제도로 지자체에 배정된 재원에서 나왔다.",
+   "insight": "그래서— pEPR 분담금이 '서류상 제도'를 넘어 실제 분류시설 설비투자로 이어지는 첫 사례들이 쌓이고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "BENZ, 부식방지 포장필름에 재생 PE 30% 적용",
+   "url": "https://www.packagingeurope.com/benzs-vapour-corrosion-inhibitor-films-contain-30-post-consumer-pe/",
+   "date": "2026-11-06",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "기술혁신",
+    "지속가능"
+   ],
+   "body": "독일 BENZ Packaging이 금속 부품 운송에 쓰이는 기화성 부식방지(VCI) 필름에 소비자 재생 폴리에틸렌(PE)을 최소 30% 적용했다. 함부르크 BFSV 포장연구소가 TL 8135-0043 기준으로 시험한 결과 최고 등급인 3등급 부식방지 성능을 유지하는 것으로 확인됐다.",
+   "insight": "그래서— '재생원료를 쓰면 성능이 떨어진다'는 통념이 산업용 포장재에서도 깨지고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "노팅엄대 등 4개 기관, 균사체 완충재로 발포폴리스티렌 대체 연구",
+   "url": "https://www.packagingeurope.com/university-of-nottingham-secures-1-4-million-for-mushroom-eps-packaging-alternative/",
+   "date": "2026-11-04",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S1개념",
+    "기술혁신",
+    "발상혁신"
+   ],
+   "body": "영국 노팅엄대학이 스완지대·바스대·버섯 소재 기업 Magical Mushroom Company와 함께 총 140만 파운드 규모의 2년짜리 연구 컨소시엄을 출범했다. 영국 공학·물리학연구위원회(EPSRC)가 80만 파운드를 지원하며, 발포폴리스티렌(EPS)을 대체할 균사체 복합재의 생물학적 구조와 표면처리 기술을 연구한다.",
+   "insight": "그래서— 완충재 영역에서도 '석유 기반 발포소재'의 대안이 연구 단계를 넘어 산업 파트너와 함께 움직이고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "Orkka, 낭비 줄이는 핸드 스트레치필름 디스펜서 출시",
+   "url": "https://www.packagingeurope.com/orkka-targets-consistency-and-reduced-waste-with-new-film-dispenser/",
+   "date": "2026-11-05",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S3상용",
+    "기술혁신",
+    "사용성"
+   ],
+   "body": "영국 포장재 유통사 Orkka가 팔레트 포장용 핸드 스트레치필름 디스펜서를 새로 선보였다. 자석식 거치대를 갖추고 430mm·520mm 두 폭의 필름에 호환되며, 사전연신(pre-stretch) 필름과 일반 필름을 모두 쓸 수 있도록 설계됐다.",
+   "insight": "그래서— 필름 자체의 재생원료 함량만큼이나, '덜 쓰게 만드는 디스펜서'도 현장 탄소발자국을 줄이는 변수가 되고 있다."
+  },
+  {
+   "is_reg": false,
+   "flag": "🇪🇺",
+   "region": "유럽",
+   "headline": "Feltwood, 과일·채소 폐기물로 식품 트레이 소재 개발 추진",
+   "url": "https://www.packagingeurope.com/agri-food-waste-to-be-converted-into-food-trays-and-other-disposables/",
+   "date": "2026-11-05",
+   "source": "Packaging Europe",
+   "img": "",
+   "tags": [
+    "유럽",
+    "S1개념",
+    "발상혁신",
+    "지속가능"
+   ],
+   "body": "스페인 사라고사의 소재 기업 Feltwood가 과일·채소 폐기물을 원료로 만든 100% 식물성 섬유 소재를 식품 트레이 등 일회용 포장으로 확장하는 방안을 검토하고 있다. 현재는 인테리어 소재로 먼저 상용화됐으며, EU 지원 연구에서는 이 소재로 만든 과일 트레이의 환경 편익을 평가한 바 있다.",
+   "insight": "그래서— '농업 부산물 → 포장재' 전환이 아직은 콘셉트 단계이지만, 완전 퇴비화 가능한 트레이의 후보군이 하나 더 늘었다."
+  }
+ ],
+ "regulation_current": [
+  {
+   "url": "https://productstewardship.us/calrecycle-approves-sb-54-regulations/",
+   "title": "캘리포니아 SB54(EPR) 영구규칙, 올해 5월부터 발효 중",
+   "body": "캘리포니아주 행정법규심의국(OAL)이 지난 5월 1일 플라스틱오염방지·포장생산자책임법(SB54)의 영구 규칙을 승인하면서 규정이 즉시 발효됐다. 생산자들은 6월 1일까지 생산자책임단체 등록, 독립생산자 등록, 소규모 생산자 면제 신청 중 하나를 마쳐야 했으며, 전면적인 제도 시행은 2027년 1월로 예정돼 있다."
+  },
+  {
+   "url": "https://www.webpronews.com/californias-ban-on-misleading-recycling-symbols-takes-aim-at-decades-of-plastic-confusion/",
+   "title": "캘리포니아 SB343 재활용 표시 규정, 10월 4일부로 시행",
+   "body": "재활용 표시 요건을 강화한 캘리포니아 '진실 재활용법' SB343이 10월 4일부터 시행되면서, 주 전역 재활용 기준을 충족하지 못하는 포장에는 삼각화살표 등 재활용 표시를 쓸 수 없게 됐다. 업계 단체가 표현의 자유 침해를 주장하며 제기한 소송은 아직 진행 중이어서, 시행 이후에도 법적 다툼은 계속되고 있다."
+  },
+  {
+   "url": "https://www.packaginginsights.com/news/coca-cola-nestle-danone-recycling-claims.html",
+   "title": "코카콜라·네슬레·다논, EU 그린워싱 조사 뒤 재활용 표시 문구 일괄 수정",
+   "body": "유럽 소비자단체 BEUC의 그린워싱 제소로 시작된 3년간의 대화 끝에, 코카콜라·네슬레에 이어 다논까지 지난 10월 플라스틱병 재활용 표시 문구를 바꾸기로 합의했다. '100% 재활용' 표시는 '캡·라벨 제외 100% 재활용'으로, '다시 재활용하세요'는 '재활용하세요'로 바뀌며, 각국 소비자보호당국이 이행 여부를 모니터링한다."
+  },
+  {
+   "url": "https://www.whalesbook.com/news/English/industrial-goodsservices/India-Builds-rPET-Capacity-for-Mandate-Faces-Key-Hurdles/69ce476b69ec081354dd22cf",
+   "title": "인도, 2026/27 회계연도부터 음료 PET 재생원료 40% 함량 의무화",
+   "body": "인도는 2026~27 회계연도부터 음료용 PET병을 포함한 1군 경질 플라스틱 포장에 최소 40%의 재생 플라스틱 함량을 의무화했다. 인도식품안전표준청(FSSAI)이 17곳의 재생PET(rPET) 생산설비를 인가해 약 30만 톤의 생산능력을 확보했지만, 음료업계는 수요 대비 공급이 여전히 부족하다고 정부에 호소하고 있다."
+  },
+  {
+   "url": "https://www.mysteel.net/news/5139466-chinas-new-plastic-ban-takes-effect-reshaping-pe-packaging-industry",
+   "title": "중국, 생태환경법 기반 비닐봉투 금지 전면 집행",
+   "body": "중국의 개정 비닐봉투 금지 조치가 8월 15일부로 전면 시행되며, 새로 시행된 생태환경법에 따라 법적 구속력을 갖춘 단속이 처음으로 뒤따르고 있다. 포장용 폴리에틸렌(PE) 필름·백 업계는 금지 품목 전환과 대체 소재 수요 대응에 나서고 있다."
+  }
+ ],
+ "regulation_future": [
+  {
+   "title": "EU, 비OECD 국가 대상 플라스틱 폐기물 수출 전면 금지 — 11월 21일 시행",
+   "url": "https://europeanbusinessmagazine.com/eu-rules-and-supply-limits-test-asias-access-to-key-export-markets-as-plasticity-forum-returns-to-malaysia-for-solutions/",
+   "body": "EU는 11월 21일부터 비(非)OECD 국가로의 비위험 플라스틱 폐기물(PET·HDPE 포함) 수출을 전면 금지한다. 이 조치는 최소 2029년 5월까지 유지되며, 이후에는 엄격한 환경 조건을 충족한 비OECD 국가에 한해 수입 승인을 신청할 수 있는 예외 절차가 열린다."
+  },
+  {
+   "title": "EU, PPWR 통일 라벨링 이행규정 2027년 2분기로 연기",
+   "url": "https://www.packagingeurope.com/eu-commission-misses-deadline-to-harmonize-ppwrs-labelling-requirements/",
+   "body": "당초 8월 12일 공개 예정이던 PPWR 통일 라벨링 이행규정 발표가 유럽연합 집행위원회의 사전 공공협의 절차 추가로 2027년 2분기로 늦춰졌다. 라벨링 의무 자체는 이행규정 발효 24개월 후 또는 2028년 8월 12일 중 늦은 시점부터 적용되므로, 이번 연기로 실제 표시 의무 시점도 함께 뒤로 밀리게 됐다."
+  },
+  {
+   "title": "EU 재생 플라스틱 '폐기물 지위 종료' 통일기준, 2027년 중반 적용 예정",
+   "url": "https://www.packaginginsights.com/news/eu-harmonizes-end-of-waste-rules-recycled-plastics.html",
+   "body": "EU 회원국이 합의한 재생 플라스틱 폐기물 지위 종료 통일기준은 이행규정 발효 후 6개월의 유예기간을 거쳐 2027년 중반부터 적용될 전망이다. 그 사이 11월 21일부터는 비OECD 국가로의 플라스틱 폐기물 수출이 막히면서 역내 재생원료 공급이 늘어날 것으로 예상돼, 통일기준의 실효성이 한층 중요해지고 있다."
+  },
+  {
+   "title": "캘리포니아 SB54, 2027년 1월부터 생산자책임재활용제도 전면 가동",
+   "url": "https://www.mondaq.com/unitedstates/environmental-law/1797264/californias-sb-54-epr-regulations-take-effect-key-deadlines-and-compliance-obligations-for-producers",
+   "body": "현재는 등록·보고 단계에 머물러 있는 캘리포니아 SB54 제도가 2027년 1월부터 전면 가동되며, 생산자책임단체(PRO)인 Circular Action Alliance가 분담금 부과와 재활용 인프라 투자를 본격적으로 집행하게 된다. 2032년까지 일회용 플라스틱 포장 25% 감축, 재활용률 65% 달성이 목표로 걸려 있다."
+  },
+  {
+   "title": "태국, 2027년부터 포장재 생산자책임재활용제도(EPR) 의무화 예정",
+   "url": "https://wkaiglobal.com/blogs/asia-advances-divergent-plastic-rules-as-global-treaty-talks-stall",
+   "body": "태국은 2027년부터 포장재에 대한 의무적 생산자책임재활용제도(EPR)를 도입할 예정이다. 이미 역내에서 EPR을 시행 중인 베트남, 도입을 서두르는 인도네시아와 함께 아세안 주요국의 포장재 규제가 각자 다른 속도로 강화되고 있다."
+  }
+ ]
+}
