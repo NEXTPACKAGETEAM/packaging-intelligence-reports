@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>포장재 인텔리전스 11호</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #FAF8F4; --ink: #17191D; --ink-soft: #4A4D55; --slate: #6B6F7B;
+  --accent: #1B4FE0; --accent-soft: #EEF2FF; --accent-line: #C9D6FB;
+  --line: #E6E4DC; --card: #FFFFFF;
+  --tag-neutral: #5B5F69; --tag-neutral-line: #DEDCD3;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+    --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+    --line: #2A2B30; --card: #1B1C22;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #14151A; --ink: #F2F1ED; --ink-soft: #C7C6C2; --slate: #93949E;
+  --accent: #6E93FF; --accent-soft: #1B2340; --accent-line: #33417A;
+  --line: #2A2B30; --card: #1B1C22;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding: 0 16px; }
+.wrap { max-width: 720px; margin: 0 auto; padding-block: 48px 80px; }
+.masthead { padding-bottom: 28px; border-bottom: 2px solid var(--ink); margin-bottom: 32px; }
+.kicker { font-size: 12px; letter-spacing: 0.22em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; margin: 0 0 14px; }
+.masthead-title { font-family: 'Noto Serif KR', serif; font-weight: 900;
+  font-size: clamp(32px, 6vw, 46px); line-height: 1.18; letter-spacing: -0.01em;
+  margin: 0 0 18px; text-wrap: balance; }
+.meta-bar { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 13px; color: var(--slate);
+  font-variant-numeric: tabular-nums; }
+.meta-bar b { color: var(--ink); font-weight: 700; }
+.meta-bar .accent { color: var(--accent); font-weight: 700; }
+.meta-sep { margin: 0 10px; color: var(--line); }
+.summary { border: 1px solid var(--accent-line); background: var(--accent-soft);
+  border-radius: 4px; padding: 22px 24px; margin-bottom: 40px; }
+.summary-label { font-size: 13px; letter-spacing: 0.1em; font-weight: 700; color: var(--accent);
+  margin: 0 0 10px; text-transform: uppercase; }
+.summary p { margin: 0; font-size: 15.5px; line-height: 1.75; color: var(--ink); }
+.section { margin-bottom: 44px; }
+.section-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.section-kicker { font-size: 12px; letter-spacing: 0.16em; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; white-space: nowrap; }
+.section-title { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 20px;
+  margin: 0; color: var(--ink-soft); }
+.item-grid { display: flex; flex-direction: column; }
+.item { display: grid; grid-template-columns: 168px 1fr; gap: 20px;
+  padding: 26px 0; border-bottom: 1px solid var(--line); }
+.item:last-child { border-bottom: none; }
+.item-media { width: 168px; aspect-ratio: 4 / 3; border-radius: 6px; overflow: hidden;
+  background: var(--line); border: 1px solid var(--line); }
+.item-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.item:not(:has(.item-media)) { grid-template-columns: 1fr; }
+.item-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 9px; }
+.tag { font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 20px;
+  white-space: nowrap; line-height: 1.5; }
+.tag-blue { border: 1px solid var(--accent-line); color: var(--accent); }
+.tag-neutral { border: 1px solid var(--tag-neutral-line); color: var(--tag-neutral); }
+a.item-headline-link, a.item-desc-link { text-decoration: none; color: inherit; }
+.item-headline { font-family: 'Noto Serif KR', serif; font-weight: 700; font-size: 17.5px;
+  line-height: 1.34; letter-spacing: -0.005em; margin: 0 0 6px; color: var(--ink); }
+a.item-headline-link:hover .item-headline { color: var(--accent); }
+.item-meta { font-size: 12px; color: var(--slate); margin-bottom: 8px; }
+.item-desc { font-size: 14px; line-height: 1.64; color: var(--ink-soft); margin: 0 0 10px; max-width: 65ch; }
+.item-insight { border-left: 3px solid var(--accent); border-radius: 0 4px 4px 0;
+  padding: 8px 14px; font-size: 13px; line-height: 1.6; color: var(--accent); background: var(--accent-soft); }
+.footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+  font-size: 11.5px; line-height: 1.8; color: var(--slate); }
+@media (max-width: 560px) {
+  .item { grid-template-columns: 96px 1fr; gap: 14px; }
+  .item-media { width: 96px; }
+  .item-headline { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="kicker">PACKAGING INTELLIGENCE · WEEKLY</p>
+    <h1 class="masthead-title">전시는 몰리고, 수출금지는 코앞으로</h1>
+    <div class="meta-bar">
+      <span class="accent">11호</span><span class="meta-sep">·</span>
+      2026.11.10 &ndash; 11.16<span class="meta-sep">·</span>
+      신선 <b>4</b>건<span class="meta-sep">·</span>
+      규제 <span class="accent">1</span><span class="meta-sep">·</span>
+      사진 4
+    </div>
+  </header>
+
+  <div class="summary">
+    <p class="summary-label">AI 요약 노트</p>
+    <p>이번 주 포장 전시가 아시아와 유럽에 동시에 몰렸다 — 네덜란드 위트레흐트의 서스테이너블 패키징 서밋이 PPWR 다음 단계를 짚은 데 이어, 홍콩 코스모팩 아시아와 상하이 인터팩 차이나가 각각 11월 10일과 16일 문을 열었다. 쿠알라룸푸르 플라스티시티 포럼은 EU의 비OECD 국가행 플라스틱 폐기물 수출 전면금지가 11월 21일로 닷새 앞까지 다가온 시점에 열려, 아세안 수출기업의 대응을 핵심 의제로 올렸다. 화장품 ODM 업계에서는 코스맥스가 분기 기준 역대 최대 실적을 내놓았고, 포장업계 지분 재편도 사모펀드 주도로 계속됐다 — 마이어-멜른호프그룹이 MM패키징 지분 70%를 24억 유로에 KPS캐피탈에 넘겼다.</p>
+  </div>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">규제 레이더 · REGULATION</span>
+      <h2 class="section-title">닷새 앞으로 다가온 수출금지선</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://storage.ghost.io/c/61/60/61607b5b-1c0b-4249-a886-4bc4c284c107/content/images/d2wrwj382xgrci-cloudfront-net/Pictures/2000xany/5/4/8/19548_pe_sps_podium_948519.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">유럽</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-blue">지속가능</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-neutral">기술혁신</span></div>
+<a class="item-headline-link" href="https://packagingeurope.com/spotlighting-ppwr-innovations-and-ai-at-sustainable-packaging-summit-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇪🇺 유럽 — 서스테이너블 패키징 서밋, PPWR 다음 단계를 논의하다</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-10</span><span class="meta-sep"> · </span>Packaging Europe</div>
+<a class="item-desc-link" href="https://packagingeurope.com/spotlighting-ppwr-innovations-and-ai-at-sustainable-packaging-summit-2026/" target="_blank" rel="noopener"><p class="item-desc">11월 10~12일 네덜란드 위트레흐트 야르베우르스에서 &#x27;서스테이너블 패키징 서밋 2026&#x27;이 사흘간 열렸다. 유럽연합 집행위원회 관계자가 참석해 PPWR 다음 단계를 논의했고, 인공지능을 활용한 소비자 폐기물 분류를 다루는 세션도 메인 무대에 올랐으며, 11월 11일에는 지속가능성 어워드 시상식이 진행됐다.</p></a>
+<div class="item-insight">그래서— PPWR 집행 2년차를 맞아, 포장업계의 관심이 &#x27;규정 이해&#x27;에서 &#x27;규정을 현장에 심을 기술&#x27;로 옮겨가고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="section-kicker">이번 주 신호 · SIGNALS</span>
+      <h2 class="section-title">그 외 혁신 신호</h2>
+    </div>
+    <div class="item-grid"><article class="item">
+<div class="item-media"><img src="https://www.cosmeticsbusiness.com/banner-image/5031.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">중국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">업계공인</span><span class="tag tag-blue">지속가능</span></div>
+<a class="item-headline-link" href="https://www.cosmeticsbusiness.com/cosmoprof-asia-2026" target="_blank" rel="noopener"><h3 class="item-headline">🇨🇳 중국 — 코스모팩 아시아 2026, 홍콩서 &#x27;지속가능 뷰티&#x27; 조명</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-10</span><span class="meta-sep"> · </span>Cosmetics Business</div>
+<a class="item-desc-link" href="https://www.cosmeticsbusiness.com/cosmoprof-asia-2026" target="_blank" rel="noopener"><p class="item-desc">뷰티 공급망 전시회 &#x27;코스모팩 아시아 2026&#x27;이 11월 10~12일 홍콩 아시아월드-엑스포에서 열렸다. 원료·실험실, 위탁생산, 1차·2차 패키징, 프레스티지 팩·OEM, 인쇄·라벨, 기계·장비 전 분야 공급사가 참가했고, 지속가능성 전시 프로그램 &#x27;Be Sustainable with Beauty&#x27;가 올해도 운영됐다. 완제품 중심 전시 &#x27;코스모프로프 아시아&#x27;는 하루 뒤인 11일부터 13일까지 홍콩컨벤션센터에서 함께 열렸다.</p></a>
+<div class="item-insight">그래서— 완제품 전시와 공급망 전시가 같은 주 홍콩에 몰리면서, 화장품 브랜드와 패키징 공급사의 &#x27;직거래 협상&#x27;이 한층 빨라지는 무대가 만들어졌다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://packagingsouthasia.com/wp-content/uploads/2026/05/unnamed-27.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">중국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">기술혁신</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://packagingsouthasia.com/events/interpack-china-2026/" target="_blank" rel="noopener"><h3 class="item-headline">🇨🇳 중국 — 인터팩 차이나 2026, 상하이서 970개 기업과 개막</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-16</span><span class="meta-sep"> · </span>Packaging South Asia</div>
+<a class="item-desc-link" href="https://packagingsouthasia.com/events/interpack-china-2026/" target="_blank" rel="noopener"><p class="item-desc">구 SWOP을 잇는 &#x27;인터팩 차이나 2026&#x27;이 11월 16~18일 상하이 신국제엑스포센터에서 열렸다. 약 970개 기업이 5개 홀, 7만㎡ 규모로 참가했고 주최측은 약 4만7000명의 참관객을 예상했으며, 친환경 포장을 다루는 &#x27;그린파워&#x27; 구역과 &#x27;인터팩 스포트라이트 포럼&#x27;이 식품 포장 기술과 여성 리더십을 주제로 첫날 함께 열렸다.</p></a>
+<div class="item-insight">그래서— 중국 포장 전시의 중심이 &#x27;생산 규모&#x27;를 넘어 &#x27;친환경 전환 속도&#x27;를 보여주는 쪽으로 옮겨가고 있다.</div>
+</div>
+</article><article class="item">
+<div class="item-media"><img src="https://thevaluenews.co.kr/data/cheditor4/2611/1dabc3c99ae36347c2e6a4e1faadb66084c0a38c.png" alt="" loading="lazy"></div>
+<div class="item-body">
+<div class="item-tags"><span class="tag tag-blue">한국</span><span class="tag tag-neutral">S3상용</span><span class="tag tag-neutral">경쟁 추격</span><span class="tag tag-neutral">업계공인</span></div>
+<a class="item-headline-link" href="https://thevaluenews.co.kr/news/203179" target="_blank" rel="noopener"><h3 class="item-headline">🇰🇷 한국 — 코스맥스, 3분기 매출·영업이익 모두 역대 최대</h3></a>
+<div class="item-meta"><span class="meta-date">2026-11-11</span><span class="meta-sep"> · </span>더밸류뉴스</div>
+<a class="item-desc-link" href="https://thevaluenews.co.kr/news/203179" target="_blank" rel="noopener"><p class="item-desc">코스맥스가 11월 11일 공시한 2026년 3분기 연결 실적에서 매출 8758억원, 영업이익 833억원을 기록했다고 밝혔다. 전년 동기 대비 매출은 약 50%, 영업이익은 약 95% 늘며 분기 기준 역대 최대치를 새로 썼고, 영업이익률도 9%대로 올라섰다. 국내 법인 실적 개선이 성장을 이끌었고 중국·미국·동남아 법인 주문도 늘었다.</p></a>
+<div class="item-insight">그래서— 생산·충전 능력을 늘려온 ODM사의 실적이 뛰면서, K뷰티 패키징 공급망에도 투자 여력이 더 쌓이고 있다.</div>
+</div>
+</article></div>
+  </section>
+
+  <div class="footer">exj31 Packaging Intelligence · 구글 검색 기반 신호 수집 · 발행 지난 7일 신규 · 팩트 무손실(추측 금지)</div>
+</div>
+</body>
+</html>

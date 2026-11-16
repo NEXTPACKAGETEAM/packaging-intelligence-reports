@@ -97,5 +97,16 @@
     "regulation_current": 5,
     "regulation_future": 5,
     "masthead_title": "규정은 늦춰지고, 재생원료는 빨라진다"
+  },
+  {
+    "number": 11,
+    "date_range": "2026.11.10~11.16",
+    "newsletter_path": "newsletter-11.html",
+    "regulation_path": "regulation-11.html",
+    "newsletter_items": 4,
+    "photo_count": 4,
+    "regulation_current": 5,
+    "regulation_future": 5,
+    "masthead_title": "전시는 몰리고, 수출금지는 코앞으로"
   }
 ]
